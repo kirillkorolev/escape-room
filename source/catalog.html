@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <title>Escape Room</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="./js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <header class="page-header page-header--menu-closed">
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
+
+              <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
+            </picture>
+          </a>
+          <button class="page-header__toggle" type="button" aria-label="close"><div>меню</div><span class="page-header__close-toggle"></span></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__menu-list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Квесты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Новичкам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-nav__contacts-list contacts">
+            <li class="contacts__item">
+              <a class="contacts__town-link" href="#">
+                <svg width="16" height="21">
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                <div>Новосибирск</div>
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__phone" href="tel: +73832840160">8 (383) 284 01 60</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Квесты Escape Room</h1>
+      <section class="quests">
+          <h2 class="quests__title">Квесты в Новосибирске</h2>
+            <p class="quests__text">Выберете тематику</p>
+
+            <form class="quests__form">
+              <ul class="quests__categories-list">
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="all-quests">Все квесты</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="all-quests">
+
+                </li>
+                <li class="quests__categories-item">
+
+                  <label class="quests__label" for="adventures">Приключения</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="adventures">
+
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="horror">Ужасы</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="horror">
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="mysticism">Мистика</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="mysticism">
+
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="detective">Детектив</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="detective">
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="sci-fi">Sci-fi</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="sci-fi">
+                </li>
+              </ul>
+            </form>
+
+            <ul class="quests__list">
+              <li class="quests__item theme">
+                <h3 class="theme__name">Склеп</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">2-5 чел</div>
+                <div class="theme__level">сложный</div>
+                <span class="theme__hit">Хит</span>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Маньяк</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">3-5 чел</div>
+                <div class="theme__level">средний</div>
+                <span class="theme__hit">Хит</span>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Ритуал</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">3-5 чел</div>
+                <div class="theme__level">сложный</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">История призраков</h3>
+                <address class="theme__address">Новослободская, 2а</address>
+                <div class="theme__guests-ammount">5-6 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Тайны старого особняка</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">2-5 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Хижина в лесу</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">4-7 чел</div>
+                <div class="theme__level">средний</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Фатальный эксперимент</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">5-8 чел</div>
+                <div class="theme__level">сложный</div>
+                <span class="theme__hit">Хит</span>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Метро 2033</h3>
+                <address class="theme__address">Новослободская, 2а</address>
+                <div class="theme__guests-ammount">6-8 чел</div>
+                <div class="theme__level">средний</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Старый чердкак</h3>
+                <address class="theme__address">Новослободская, 2а</address>
+                <div class="theme__guests-ammount">2-3 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Последний рубеж</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">4-7 чел</div>
+                <div class="theme__level">средний</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Марс-2056</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">2-4 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item social__item--instagram">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в инстаграмме</span>
+              <svg width="28" height="28">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="vk.com">
+              <span class="visually-hidden">Мы во вконтакте</span>
+              <svg width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="page-footer__question" href="#"><span>?&#160;</span>Задать вопрос</a>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

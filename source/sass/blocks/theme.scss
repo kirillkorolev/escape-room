@@ -1,0 +1,79 @@
+@media (max-width: $desktop-width) {
+  .theme__name {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .theme__hit {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    color: $gray;
+    display: inline-block;
+    vertical-align: top;
+    width: 63px;
+    padding: 5px 5px 5px 25px;
+    border-radius: 25px;
+    border: 2px solid rgba(242, 137, 15, 0.74);
+    position: relative;
+    z-index: -1;
+  }
+
+  .theme__hit::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icons/icon-star.svg");
+    left: 8px;
+    top: 5px;
+  }
+
+  .theme__address,
+  .theme__guests-ammount,
+  .theme__level {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 500;
+    color: $gray;
+    position: relative;
+    z-index: -1;
+  }
+
+  .theme__address {
+    font-style: normal;
+  }
+
+  .theme__address::before,
+  .theme__guests-ammount::before,
+  .theme__level::before {
+    position: absolute;
+    content: "";
+  }
+
+  .theme__address::before {
+    width: 11px;
+    height: 14px;
+    background-image: url("../img/icons/icon-location-orange.svg");
+    top: 1px;
+    left: 3px;
+  }
+
+  .theme__guests-ammount::before {
+    width: 13px;
+    height: 16px;
+    background-image: url("../img/icons/icon-person.svg");
+    left: 2px;
+    top: 1px;
+  }
+
+  .theme__level::before {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icons/icon-puzzle.svg");
+    left: 2px;
+    top: 1px;
+  }
+}

@@ -1,0 +1,27 @@
+@media (max-width: $desktop-width) {
+  .quests__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $orange;
+    margin: 0;
+  }
+
+  .quests__text {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 70px;
+    margin: 0;
+  }
+
+  .quests__categories-list,
+  .quests__list {
+    @include reset-list;
+  }
+
+  .quests__label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}

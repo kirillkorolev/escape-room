@@ -1,0 +1,22 @@
+@media (max-width: $desktop-width) {
+  .page-footer__question {
+    font-size: 12px;
+    line-height: 17px;
+    color: $gray;
+    font-weight: 500;
+    border-bottom: 1px dashed $gray;
+  }
+
+  .page-footer__question:hover {
+    color: $orange;
+    border-color: $orange;
+  }
+
+  .page-footer__question span {
+    display: none;
+  }
+
+  .page-footer__question:hover span {
+    display: inline;
+  }
+}

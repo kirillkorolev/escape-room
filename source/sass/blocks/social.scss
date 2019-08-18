@@ -1,0 +1,25 @@
+@media (max-width: $desktop-width) {
+  .social__list {
+    @include reset-list;
+  }
+
+  .social__link {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $dark-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+  }
+
+  .social__item--vk:hover .social__link {
+    background-color: $blue;
+    color: $white;
+  }
+
+  .social__item--instagram:hover .social__link {
+    color: $white;
+  }
+}

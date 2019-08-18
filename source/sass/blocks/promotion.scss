@@ -1,0 +1,32 @@
+@media (max-width: $desktop-width) {
+  .promotion__title {
+    margin: 0;
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 800;
+  }
+
+  .promotion__link {
+    color: $white;
+    line-height: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    padding: 22px 25px 23px;
+    background-color: $orange;
+    text-align: center;
+    border-radius: 48px;
+    cursor: pointer;
+  }
+
+  .promotion__text {
+    font-weight: 500;
+    color: $gray;
+  }
+
+  .promotion__link:hover {
+    background-color: $orange-hover;
+  }
+}

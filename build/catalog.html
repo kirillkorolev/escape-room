@@ -58,9 +58,10 @@
     <header class="page-header page-header--menu-closed">
       <div class="page-header__container">
         <div class="page-header__wrapper">
-          <a class="page-header__logo-link">
+          <a class="page-header__logo-link" href="index.html">
             <picture>
               <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
+
               <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
             </picture>
           </a>
@@ -102,11 +103,115 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Квесты Escape Room</h1>
-      <section class="promotion">
-        <h2 class="promotion__title">Лучшие квесты в Новосибирске</h2>
-        <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
-      </section>
-      <a class="promotion__link" href="#">Выбрать квест</a>
+      <section class="quests">
+          <h2 class="quests__title">Квесты в Новосибирске</h2>
+            <p class="quests__text">Выберете тематику</p>
+
+            <form class="quests__form">
+              <ul class="quests__categories-list">
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="all-quests">Все квесты</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="all-quests">
+
+                </li>
+                <li class="quests__categories-item">
+
+                  <label class="quests__label" for="adventures">Приключения</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="adventures">
+
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="horror">Ужасы</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="horror">
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="mysticism">Мистика</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="mysticism">
+
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="detective">Детектив</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="detective">
+                </li>
+                <li class="quests__categories-item">
+                  <label class="quests__label" for="sci-fi">Sci-fi</label>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="sci-fi">
+                </li>
+              </ul>
+            </form>
+
+            <ul class="quests__list">
+              <li class="quests__item theme">
+                <h3 class="theme__name">Склеп</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">2-5 чел</div>
+                <div class="theme__level">сложный</div>
+                <span class="theme__hit">Хит</span>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Маньяк</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">3-5 чел</div>
+                <div class="theme__level">средний</div>
+                <span class="theme__hit">Хит</span>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Ритуал</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">3-5 чел</div>
+                <div class="theme__level">сложный</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">История призраков</h3>
+                <address class="theme__address">Новослободская, 2а</address>
+                <div class="theme__guests-ammount">5-6 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Тайны старого особняка</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">2-5 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Хижина в лесу</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">4-7 чел</div>
+                <div class="theme__level">средний</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Фатальный эксперимент</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">5-8 чел</div>
+                <div class="theme__level">сложный</div>
+                <span class="theme__hit">Хит</span>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Метро 2033</h3>
+                <address class="theme__address">Новослободская, 2а</address>
+                <div class="theme__guests-ammount">6-8 чел</div>
+                <div class="theme__level">средний</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Старый чердкак</h3>
+                <address class="theme__address">Новослободская, 2а</address>
+                <div class="theme__guests-ammount">2-3 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Последний рубеж</h3>
+                <address class="theme__address">Верхнетецкая, 32</address>
+                <div class="theme__guests-ammount">4-7 чел</div>
+                <div class="theme__level">средний</div>
+              </li>
+              <li class="quests__item theme">
+                <h3 class="theme__name">Марс-2056</h3>
+                <address class="theme__address">пр. Ленина, 37</address>
+                <div class="theme__guests-ammount">2-4 чел</div>
+                <div class="theme__level">легкий</div>
+              </li>
+            </ul>
+        </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__social social">
@@ -118,7 +223,6 @@
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
-
           </li>
           <li class="social__item social__item--vk">
             <a class="social__link" href="vk.com">
@@ -127,63 +231,11 @@
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
-
           </li>
         </ul>
       </div>
       <a class="page-footer__question" href="#"><span>?&#160;</span>Задать вопрос</a>
     </footer>
-
-
-    <section class="modal town">
-      <h2 class="town__title">Ваш город</h2>
-      <button class="town__toggle" type="button" aria-label="close">
-        <span class="town__close-toggle"></span>
-      </button>
-
-      <a class="town__link">Определить местоположение</a>
-
-      <div>... или выберите вручную</div>
-      <ul class="town__list">
-        <li class="town__item town__item--current">Новосибирск</li>
-        <li class="town__item">Иркутск</li>
-        <li class="town__item">Смоленск</li>
-        <li class="town__item">Волгоград</li>
-        <li class="town__item">Комсомольск-на-Амуре</li>
-      </ul>
-    </section>
-
-    <section class="modal question">
-      <h2 class="question__title">Задайте вопрос</h2>
-      <button class="question__toggle" type="button" aria-label="close">
-        <span class="question__close-toggle"></span>
-      </button>
-      <form class="question__form" action="https://escaperoom.ru" method="post">
-        <fieldset class="form__item">
-          <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Имя">
-        </fieldset>
-        <fieldset class="form__item">
-          <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
-          <input class="form__input" id="email" type="email" placeholder="E-mail">
-        </fieldset>
-        <fieldset class="form__item">
-          <h3 class="forn__label">Ваш вопрос:</h3>
-          <textarea id="question-text" name="question" rows="3" placeholder="Начните вводить ..."></textarea>
-        </fieldset>
-
-        <button class="question__send" type="submit">Отправить вопрос</button>
-
-        <div class="form__confirmation">
-          <input class="form__checkbox" type="checkbox" name="confirmation" id="confirmation-field">
-          <label for="confirmation-field"><span class="visually-hidden">Согласен</span></label>
-          <div form="form__confirmation-text">Я согласен с<a class="form__agreement" href="#">правилами обработки персональных данных</a>и пользовательским соглашением</div>
-        </div>
-
-      </form>
-
-    </section>
-
     <script src="./js/script.js"></script>
   </body>
 </html>
