@@ -1,18 +1,17 @@
-@media (max-width: $desktop-width) {
-  .page-header {
-    padding: 24px 39px 0 36px;
-  }
-
-  .page-header__toggle {
-    display: none;
-  }
-
-  .page-header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.page-header {
+  padding: 24px 39px 0 36px;
 }
+
+.page-header__toggle {
+  display: none;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 @media (max-width: $mobile-width) {
   .page-header__container {

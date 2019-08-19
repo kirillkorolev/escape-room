@@ -1,8 +1,7 @@
-@media (max-width: $desktop-width) {
-  .main-nav {
-    display: flex;
-  }
+.main-nav {
+  display: flex;
 }
+
 
 @media (max-width: $mobile-width) {
   .main-nav {

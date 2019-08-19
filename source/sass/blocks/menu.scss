@@ -1,19 +1,18 @@
-@media (max-width: $desktop-width) {
-  .menu {
-    @include reset-list;
-    width: 531px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .menu__link {
-    color: $white;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 16px;
-  }
+.menu {
+  @include reset-list;
+  width: 531px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.menu__link {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 
 @media (max-width: $mobile-width) {
   .menu {

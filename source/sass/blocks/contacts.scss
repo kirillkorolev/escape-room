@@ -1,39 +1,39 @@
-@media (max-width: $desktop-width) {
-  .contacts {
-    @include reset-list;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 266px;
-    margin-left: 24px;
-  }
 
-  .contacts__phone {
-    color: $white;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .contacts__town-link {
-    font-size: 12px;
-    line-height: 14px;
-    font-weight: 700;
-    color: $orange;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-  }
-
-  .contacts__town-link div {
-    margin-left: 8px;
-  }
-
-  .contacts__town-link:hover div {
-    padding-top: 1px;
-    border-bottom: 1px dashed $orange;
-  }
+.contacts {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 266px;
+  margin-left: 24px;
 }
+
+.contacts__phone {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts__town-link {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: $orange;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__town-link div {
+  margin-left: 8px;
+}
+
+.contacts__town-link:hover div {
+  padding-top: 1px;
+  border-bottom: 1px dashed $orange;
+}
+
 
 @media (max-width: $mobile-width) {
   .contacts {

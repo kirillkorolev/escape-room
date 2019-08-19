@@ -1,0 +1,11 @@
+.container {
+  width: $desktop-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    width: $mobile-width;
+  }
+}
