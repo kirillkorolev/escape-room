@@ -11,6 +11,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 600;
 }
 
 
@@ -18,10 +19,16 @@
   .menu {
     flex-direction: column;
     width: $mobile-width;
+    margin-bottom: 80px;
   }
 
   .menu__item {
     text-align: center;
     margin-top: 40px;
+  }
+
+  .menu__link {
+    font-size: 16px;
+    line-height: 19px;
   }
 }

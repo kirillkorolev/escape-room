@@ -20,7 +20,7 @@
 }
 
 .page-footer {
-  padding: 0 32px 24px;
+  padding: 0 32px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,14 +34,6 @@
 
 @media (max-width: $mobile-width) {
   .page-footer {
-    padding: 0 16px 43px;
-    height: 79px;
-  }
-
-  .page-footer__question {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 600;
+    display: none;
   }
 }
-

@@ -3,9 +3,60 @@
   font-size: 64px;
   line-height: 70px;
   font-weight: 800;
+  margin-bottom: 48px;
+}
+
+.promotion__text {
+  font-weight: 500;
+  color: $gray;
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.promotion {
+  background-image: url("../img/backgrounds/bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 768px;
+  margin-top: -83px;
+  position: relative;
+  z-index: -1;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("..//img/backgrounds/bg-desktop@2x.jpg");
+    background-size: 100% auto;
+  }
+}
+
+.promotion::before,
+.promotion::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 768px;
+  top: 0;
+  left: 0;
+}
+
+.promotion::before {
+  background-image: radial-gradient(315.24px at 66.07% 49.2%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 64.58%, rgba(0, 0, 0, 0.71) 100%);
+  opacity: 0.7;
+  z-index: -2;
+}
+
+.promotion::after {
+  background-image: linear-gradient(274.19deg, rgba(99, 60, 15, 0) 35.91%, #24150e 65.15%, #1a140d 98.48%);
+  opacity: 0.54;
+  z-index: -2;
+}
+
+.promotion__container {
+  padding: 200px 710px 152px 136px;
+  z-index: 10;
 }
 
 .promotion__link {
+  cursor: pointer;
   color: $white;
   line-height: 20px;
   font-weight: 800;
@@ -17,13 +68,6 @@
   background-color: $orange;
   text-align: center;
   border-radius: 48px;
-  cursor: pointer;
-}
-
-.promotion__text {
-  font-weight: 500;
-  color: $gray;
-  padding: 0;
 }
 
 .promotion__link:hover {
@@ -34,6 +78,7 @@
   .promotion__title {
     font-size: 36px;
     line-height: 40px;
+    margin-bottom: 32px;
   }
 
   .promotion__link {
@@ -41,5 +86,39 @@
     line-height: 16px;
     width: 185px;
     padding: 15px;
+  }
+
+  .promotion {
+    background-image: url("..//img/backgrounds/bg-mobile@1x.jpg");
+    margin-top: -63px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("..//img/backgrounds/bg-mobile@2x.jpg");
+      background-size: 100% auto;
+    }
+  }
+
+  .promotion::before,
+  .promotion::after {
+    height: 640px;
+  }
+
+  .promotion::before {
+    background-image: radial-gradient(251.84px at 66.07% 49.2%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 64.58%, rgba(0, 0, 0, 0.71) 100%);
+    opacity: 0.48;
+  }
+
+  .promotion::after {
+    background-image: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%);
+    opacity: 1;
+  }
+
+  .promotion__text {
+    display: none;
+  }
+
+  .promotion__container {
+    padding: 417px 16px 64px;
+    text-align: center;
   }
 }
