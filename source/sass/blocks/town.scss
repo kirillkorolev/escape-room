@@ -1,0 +1,109 @@
+.town {
+  padding: 32px 32px 53px;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--visible {
+    display: block;
+  }
+}
+
+.town__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 28px;
+}
+
+.town__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.town__link {
+  line-height: 27px;
+  color: $gray;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.town__link svg {
+  color: $orange;
+}
+
+.town__link div {
+  margin-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.town__text {
+  line-height: 27px;
+  color: $gray;
+  margin-bottom: 16px;
+}
+
+.town__list {
+  @include reset-list;
+}
+
+.town__item {
+  color: white;
+  opacity: 0.32;
+  font-size: 24px;
+  line-height: 29px;
+
+  &--current {
+    opacity: 1;
+
+    text-decoration: underline;
+    text-decoration-color: $orange;
+  }
+}
+
+.town__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.town__item:hover {
+  opacity: 1;
+}
+
+.town__toggle {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.town__close-toggle {
+  display: block;
+  position: relative;
+}
+
+.town__close-toggle::before,
+.town__close-toggle::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 2px;
+  background-color: $white;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.town__close-toggle::before {
+  transform: rotate(45deg);
+}
+
+.town__close-toggle::after {
+  transform: rotate(-45deg);
+}

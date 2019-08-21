@@ -121,15 +121,22 @@
 
     </div>
 
-    <section class="modal town">
-      <h2 class="town__title">Ваш город</h2>
-      <button class="town__toggle" type="button" aria-label="close">
-        <span class="town__close-toggle"></span>
-      </button>
+    <section class="modal town town--hidden">
+      <div class="town__header">
+        <h2 class="town__title">Ваш город</h2>
+        <button class="town__toggle" type="button" aria-label="close">
+          <span class="town__close-toggle"></span>
+        </button>
+      </div>
 
-      <a class="town__link">Определить местоположение</a>
+      <a class="town__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-target"></use>
+        </svg>
+        <div>Определить местоположение</div>
+      </a>
 
-      <div>... или выберите вручную</div>
+      <div class="town__text">... или выберите вручную</div>
       <ul class="town__list">
         <li class="town__item town__item--current">Новосибирск</li>
         <li class="town__item">Иркутск</li>
