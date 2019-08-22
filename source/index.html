@@ -116,7 +116,7 @@
 
         </li>
       </ul>
-      <a class="page-footer__question" href="#"><span>?&#160;</span>Задать вопрос</a>
+      <a class="page-footer__question question-link" href="#"><span>?&#160;</span>Задать вопрос</a>
     </footer>
 
     </div>
@@ -136,7 +136,7 @@
         <div>Определить местоположение</div>
       </a>
 
-      <div class="town__text">... или выберите вручную</div>
+      <h2 class="town__list-title">... или выберите вручную</h2>
       <ul class="town__list">
         <li class="town__item town__item--current">Новосибирск</li>
         <li class="town__item">Иркутск</li>
@@ -146,12 +146,15 @@
       </ul>
     </section>
 
-    <section class="modal question">
-      <h2 class="question__title">Задайте вопрос</h2>
-      <button class="question__toggle" type="button" aria-label="close">
-        <span class="question__close-toggle"></span>
-      </button>
-      <form class="question__form" action="https://escaperoom.ru" method="post">
+    <section class="modal question question--hidden">
+      <div class="question__header">
+        <h2 class="question__title">Задайте вопрос</h2>
+        <button class="question__toggle" type="button" aria-label="close">
+          <span class="question__close-toggle"></span>
+        </button>
+      </div>
+
+      <form class="question__form form" action="https://escaperoom.ru" method="post">
         <fieldset class="form__item">
           <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
           <input class="form__input" id="name" type="text" placeholder="Имя">
@@ -161,16 +164,19 @@
           <input class="form__input" id="email" type="email" placeholder="E-mail">
         </fieldset>
         <fieldset class="form__item">
-          <h3 class="forn__label">Ваш вопрос:</h3>
-          <textarea id="question-text" name="question" rows="3" placeholder="Начните вводить ..."></textarea>
+          <h3 class="forn__textarea-title">Ваш вопрос:</h3>
+          <textarea id="question-text" name="question" rows="4" placeholder="Начните вводить ..."></textarea>
         </fieldset>
 
-        <button class="question__send" type="submit">Отправить вопрос</button>
+        <button class="form__send" type="submit">Отправить вопрос</button>
 
         <div class="form__confirmation">
-          <input class="form__checkbox" type="checkbox" name="confirmation" id="confirmation-field">
-          <label for="confirmation-field"><span class="visually-hidden">Согласен</span></label>
-          <div form="form__confirmation-text">Я согласен с<a class="form__agreement" href="#">правилами обработки персональных данных</a>и пользовательским соглашением</div>
+          <div class="form__checkbox-wrapper">
+            <input class="visually-hidden form__checkbox" type="checkbox" name="confirmation" id="confirmation-field">
+            <label class="form__checkbox-label" for="confirmation-field"><span class="visually-hidden">Согласен</span></label>
+          </div>
+
+          <div class="form__confirmation-text">Я согласен с&#160;<a class="form__agreement" href="#">правилами обработки персональных данных </a>и пользовательским соглашением</div>
         </div>
 
       </form>

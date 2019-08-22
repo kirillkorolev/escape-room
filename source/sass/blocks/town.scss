@@ -40,10 +40,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.town__text {
+.town__list-title {
+  font-size: 17px;
   line-height: 27px;
   color: $gray;
+  margin-top: 0;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .town__list {
@@ -55,6 +58,7 @@
   opacity: 0.32;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 700;
 
   &--current {
     opacity: 1;
@@ -106,4 +110,10 @@
 
 .town__close-toggle::after {
   transform: rotate(-45deg);
+}
+
+@media (max-width: $mobile-width) {
+  .town {
+    padding: 32px 16px 208px;
+  }
 }

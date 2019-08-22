@@ -36,3 +36,29 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+
+var modalQuestion = document.querySelector('.question');
+var questionOpenButton = document.querySelector('.question-link');
+var questionCloseButton = document.querySelector('.question__toggle');
+
+questionOpenButton.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  modalQuestion.classList.remove('question--hidden');
+  modalQuestion.classList.add('question--visible');
+});
+
+questionCloseButton.addEventListener('click', function () {
+  modalQuestion.classList.remove('question--visible');
+  modalQuestion.classList.add('question--hidden');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalQuestion.classList.contains('question--visible')) {
+      modalQuestion.classList.remove('question--visible');
+      modalQuestion.classList.add('question--hidden');
+    }
+  }
+});
