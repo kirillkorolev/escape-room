@@ -20,11 +20,10 @@
           <a class="page-header__logo-link" href="index.html">
             <picture>
               <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
-
               <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
             </picture>
           </a>
-          <button class="page-header__toggle" type="button" aria-label="close"><div>меню</div><span class="page-header__close-toggle"></span></button>
+          <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__menu-list menu">
@@ -46,7 +45,7 @@
           </ul>
           <ul class="main-nav__contacts-list contacts">
             <li class="contacts__item">
-              <a class="contacts__town-link" href="#">
+              <a class="contacts__town-link js-town-link" href="#">
                 <svg width="16" height="21">
                   <use xlink:href="#icon-location"></use>
                 </svg>
@@ -54,10 +53,10 @@
               </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__phone" href="tel: +73832840160">8 (383) 284 01 60</a>
+              <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
             </li>
           </ul>
-          <div class="main-nav__footer nav__footer">
+          <div class="main-nav__footer">
             <ul class="social">
               <li class="social__item social__item--instagram">
                 <a class="social__link" href="#">
@@ -86,136 +85,272 @@
       <section class="quests">
           <h2 class="quests__title">Квесты в Новосибирске</h2>
             <p class="quests__text">Выберете тематику</p>
-
             <form class="quests__form">
               <ul class="quests__categories-list">
                 <li class="quests__categories-item">
+                  <svg width="26" height="30">
+                    <use xlink:href="#icon-all-quests"></use>
+                  </svg>
+                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="all-quests" checked>
                   <label class="quests__label" for="all-quests">Все квесты</label>
-                  <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="all-quests">
-
                 </li>
                 <li class="quests__categories-item">
-
-                  <label class="quests__label" for="adventures">Приключения</label>
+                  <svg width="36" height="30">
+                    <use xlink:href="#icon-adventures"></use>
+                  </svg>
                   <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="adventures">
-
+                  <label class="quests__label" for="adventures">Приключения</label>
                 </li>
                 <li class="quests__categories-item">
-                  <label class="quests__label" for="horror">Ужасы</label>
+                  <svg width="30" height="30">
+                    <use xlink:href="#icon-horror"></use>
+                  </svg>
+
                   <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="horror">
+                  <label class="quests__label" for="horror">Ужасы</label>
                 </li>
                 <li class="quests__categories-item">
-                  <label class="quests__label" for="mysticism">Мистика</label>
+                  <svg width="30" height="30">
+                    <use xlink:href="#icon-mysticism"></use>
+                  </svg>
                   <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="mysticism">
-
+                  <label class="quests__label" for="mysticism">Мистика</label>
                 </li>
                 <li class="quests__categories-item">
-                  <label class="quests__label" for="detective">Детектив</label>
+                  <svg width="40" height="26">
+                    <use xlink:href="#icon-detective"></use>
+                  </svg>
                   <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="detective">
+                  <label class="quests__label" for="detective">Детектив</label>
                 </li>
                 <li class="quests__categories-item">
-                  <label class="quests__label" for="sci-fi">Sci-fi</label>
+                  <svg width="28" height="30">
+                    <use xlink:href="#icon-scifi"></use>
+                  </svg>
                   <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="sci-fi">
+                  <label class="quests__label" for="sci-fi">Sci-fi</label>
                 </li>
               </ul>
             </form>
-
             <ul class="quests__list">
               <li class="quests__item theme">
-                <h3 class="theme__name">Склеп</h3>
-                <address class="theme__address">пр. Ленина, 37</address>
-                <div class="theme__guests-ammount">2-5 чел</div>
-                <div class="theme__level">сложный</div>
-                <span class="theme__hit">Хит</span>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Склеп</h3>
+                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">2-5 чел</div>
+                      <div class="theme__level">сложный</div>
+                    </div>
+                  </div>
+                  <div class="theme__hit-wrapper">
+                    <span class="theme__hit">Хит</span>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Маньяк</h3>
-                <address class="theme__address">Верхнетецкая, 32</address>
-                <div class="theme__guests-ammount">3-5 чел</div>
-                <div class="theme__level">средний</div>
-                <span class="theme__hit">Хит</span>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Маньяк</h3>
+                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">3-5 чел</div>
+                      <div class="theme__level">средний</div>
+                    </div>
+                  </div>
+                  <div class="theme__hit-wrapper">
+                    <span class="theme__hit">Хит</span>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Ритуал</h3>
-                <address class="theme__address">пр. Ленина, 37</address>
-                <div class="theme__guests-ammount">3-5 чел</div>
-                <div class="theme__level">сложный</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Ритуал</h3>
+                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">3-5 чел</div>
+                      <div class="theme__level">сложный</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">История призраков</h3>
-                <address class="theme__address">Новослободская, 2а</address>
-                <div class="theme__guests-ammount">5-6 чел</div>
-                <div class="theme__level">легкий</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">История призраков</h3>
+                    <div class="theme__address">Новослободская, 2а</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">5-6 чел</div>
+                      <div class="theme__level">легкий</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Тайны старого особняка</h3>
-                <address class="theme__address">пр. Ленина, 37</address>
-                <div class="theme__guests-ammount">2-5 чел</div>
-                <div class="theme__level">легкий</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Тайны старого особняка</h3>
+                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">2-5 чел</div>
+                      <div class="theme__level">легкий</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Хижина в лесу</h3>
-                <address class="theme__address">Верхнетецкая, 32</address>
-                <div class="theme__guests-ammount">4-7 чел</div>
-                <div class="theme__level">средний</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Хижина в лесу</h3>
+                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">4-7 чел</div>
+                      <div class="theme__level">средний</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Фатальный эксперимент</h3>
-                <address class="theme__address">Верхнетецкая, 32</address>
-                <div class="theme__guests-ammount">5-8 чел</div>
-                <div class="theme__level">сложный</div>
-                <span class="theme__hit">Хит</span>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Фатальный эксперимент</h3>
+                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">5-8 чел</div>
+                      <div class="theme__level">сложный</div>
+                    </div>
+                  </div>
+                  <div class="theme__hit-wrapper">
+                    <span class="theme__hit">Хит</span>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Метро 2033</h3>
-                <address class="theme__address">Новослободская, 2а</address>
-                <div class="theme__guests-ammount">6-8 чел</div>
-                <div class="theme__level">средний</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Метро 2033</h3>
+                    <div class="theme__address">Новослободская, 2а</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">6-8 чел</div>
+                      <div class="theme__level">средний</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Старый чердкак</h3>
-                <address class="theme__address">Новослободская, 2а</address>
-                <div class="theme__guests-ammount">2-3 чел</div>
-                <div class="theme__level">легкий</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Старый чердкак</h3>
+                    <div class="theme__address">Новослободская, 2а</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">2-3 чел</div>
+                      <div class="theme__level">легкий</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Последний рубеж</h3>
-                <address class="theme__address">Верхнетецкая, 32</address>
-                <div class="theme__guests-ammount">4-7 чел</div>
-                <div class="theme__level">средний</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Последний рубеж</h3>
+                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">4-7 чел</div>
+                      <div class="theme__level">средний</div>
+                    </div>
+                  </div>
+                </a>
               </li>
               <li class="quests__item theme">
-                <h3 class="theme__name">Марс-2056</h3>
-                <address class="theme__address">пр. Ленина, 37</address>
-                <div class="theme__guests-ammount">2-4 чел</div>
-                <div class="theme__level">легкий</div>
+                <a class="theme__link" href="#">
+                  <div class="theme__wrapper">
+                    <h3 class="theme__name">Марс-2056</h3>
+                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__details">
+                      <div class="theme__guests-ammount">2-4 чел</div>
+                      <div class="theme__level">легкий</div>
+                    </div>
+                  </div>
+                </a>
               </li>
             </ul>
         </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item social__item--instagram">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Мы в инстаграмме</span>
-              <svg width="28" height="28">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--vk">
-            <a class="social__link" href="vk.com">
-              <span class="visually-hidden">Мы во вконтакте</span>
-              <svg width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <a class="page-footer__question" href="#"><span>?&#160;</span>Задать вопрос</a>
+      <ul class=" page-footer__social social">
+        <li class="social__item social__item--instagram">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Мы в инстаграмме</span>
+            <svg width="28" height="28">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--vk">
+          <a class="social__link" href="vk.com">
+            <span class="visually-hidden">Мы во вконтакте</span>
+            <svg width="22" height="12">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__question js-question-link" href="#"><span>?&#160;</span>Задать вопрос</a>
     </footer>
+    <section class="modal town town--hidden">
+      <div class="town__header">
+        <h2 class="town__title">Ваш город</h2>
+        <button class="town__toggle js-town-close-toggle" type="button" aria-label="close">
+          <span class="town__close-toggle"></span>
+        </button>
+      </div>
+      <a class="town__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-target"></use>
+        </svg>
+        <div>Определить местоположение</div>
+      </a>
+      <h2 class="town__list-title">... или выберите вручную</h2>
+      <ul class="town__list">
+        <li class="town__item town__item--current">Новосибирск</li>
+        <li class="town__item">Иркутск</li>
+        <li class="town__item">Смоленск</li>
+        <li class="town__item">Волгоград</li>
+        <li class="town__item">Комсомольск-на-Амуре</li>
+      </ul>
+    </section>
+    <section class="modal question question--hidden">
+      <div class="question__header">
+        <h2 class="question__title">Задайте вопрос</h2>
+        <button class="question__toggle js-question-close-toggle" type="button" aria-label="close">
+          <span class="question__close-toggle"></span>
+        </button>
+      </div>
+      <form class="question__form form" action="https://escaperoom.ru" method="post">
+        <fieldset class="form__item">
+          <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+          <input class="form__input" id="name" type="text" placeholder="Имя">
+        </fieldset>
+        <fieldset class="form__item">
+          <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+          <input class="form__input" id="email" type="email" placeholder="E-mail">
+        </fieldset>
+        <fieldset class="form__item">
+          <h3 class="form__textarea-title">Ваш вопрос:</h3>
+          <textarea id="question-text" name="question" rows="4" placeholder="Начните вводить ..."></textarea>
+        </fieldset>
+        <button class="form__send" type="submit">Отправить вопрос</button>
+        <div class="form__confirmation">
+          <div class="form__checkbox-wrapper">
+            <input class="visually-hidden form__checkbox" type="checkbox" name="confirmation" id="confirmation-field">
+            <label class="form__checkbox-label" for="confirmation-field"><span class="visually-hidden">Согласен</span></label>
+          </div>
+          <div class="form__confirmation-text">Я согласен с&#160;<a class="form__agreement" href="#">правилами обработки персональных данных </a>и пользовательским соглашением</div>
+        </div>
+      </form>
+    </section>
+    <div class="blackout blackout--none"></div>
     <script src="./js/script.js"></script>
   </body>
 </html>

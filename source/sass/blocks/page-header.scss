@@ -12,10 +12,20 @@
   align-items: center;
 }
 
+.page-header__logo-link {
+  display: block;
+  width: 134px;
+  height: 50px;
+}
 
 @media (max-width: $mobile-width) {
   .page-header__container {
     flex-direction: column;
+  }
+
+  .page-header__logo-link {
+    width: 96px;
+    height: 36px;
   }
 
   .page-header__toggle {
@@ -109,6 +119,7 @@
         top: 0;
         left: 0;
         background-image: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
+        z-index: 5;
       }
 
       .page-header {

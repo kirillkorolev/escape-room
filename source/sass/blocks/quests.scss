@@ -3,23 +3,103 @@
   font-size: 14px;
   line-height: 20px;
   color: $orange;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .quests__text {
   font-weight: 800;
   font-size: 64px;
   line-height: 70px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 48px;
 }
 
-.quests__categories-list,
 .quests__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quests__categories-list {
+  @include reset-list;
+  margin-bottom: 39px;
+  display: flex;
+}
+
+.quests__categories-item {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.quests__categories-item:not(:first-child) {
+  padding-left: 40px;
+}
+
+.quests__categories-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+  padding-right: 40px;
 }
 
 .quests__label {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.quests {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+
+.quests__input:checked + label {
+  padding-top: 2px;
+  border-bottom: 2px solid $orange;
+}
+
+@media (max-width: $mobile-width) {
+  .quests {
+    padding-top: 28px;
+    width: 328px;
+    margin: 0 auto;
+  }
+
+  .quests__title {
+    margin-bottom: 8px;
+  }
+
+  .quests__text {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .quests__categories-item {
+    padding: 1px 0;
+    flex-shrink: 0;
+  }
+
+  .quests__categories-item:not(:first-child) {
+    padding-left: 16px;
+  }
+
+  .quests__categories-item:not(:last-child) {
+    padding-right: 16px;
+  }
+
+  .quests__categories-item:first-child svg {
+    width: 21px;
+    height: 24px;
+  }
+
+  .quests__categories-item:nth-child(2) svg {
+    width: 29px;
+  }
+
+  .quests__list {
+    flex-direction: column;
+  }
 }
