@@ -22,6 +22,10 @@
 
   &--instagram:hover .social__link {
     color: $white;
+    background-image: url("../img/backgrounds/bg-instagram.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
   }
 
   margin-right: 7px;

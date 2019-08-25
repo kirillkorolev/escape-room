@@ -1,0 +1,95 @@
+.quest-page__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 87px;
+}
+
+.quest-page__style {
+  color: $orange;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.quest-page__properties {
+  color: $gray;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+}
+
+.quest-page__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $gray;
+}
+
+.quest-page__book {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  width: 250px;
+  border-radius: 65px;
+  background-color: $orange;
+  color: $white;
+  text-align: center;
+  padding: 22px 0;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.quest-page__book:hover {
+  background-color: $orange-hover;
+}
+
+.quest-page__length {
+  padding: 8px 24px 8px 26px;
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+  position: relative;
+}
+
+.quest-page__guests-ammount {
+  padding: 8px 25px 8px 46px;
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+  position: relative;
+}
+
+.quest-page__level {
+  padding: 8px 0 8px 56px;
+  position: relative;
+}
+
+.quest-page__length::before,
+.quest-page__guests-ammount::before,
+.quest-page__level::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.quest-page__length::before {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/icon-clock.svg");
+  top: 10px;
+  left: 2px;
+}
+
+.quest-page__guests-ammount::before {
+  width: 16px;
+  height: 21px;
+  background-image: url("../img/icons/icon-person.svg");
+  top: 12px;
+  left: 26px;
+}
+
+.quest-page__level::before {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icons/icon-puzzle.svg");
+  top: 12px;
+  left: 26px;
+}

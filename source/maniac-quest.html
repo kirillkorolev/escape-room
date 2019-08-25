@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <title>Escape Room</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="./js/picturefill.min.js" async></script>
+  </head>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite_auto.svg"></include>
+    </div>
+    <header class="page-header page-header--menu-closed">
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo-link" href="index.html">
+            <picture>
+              <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
+              <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
+            </picture>
+          </a>
+          <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__menu-list menu">
+            <li class="menu__item menu__item--current">
+              <a class="menu__link menu__link">Квесты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Новичкам</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__contacts-list contacts">
+          <div class="contacts__item">
+            <a class="contacts__town-link js-town-link" href="#">
+              <svg width="16" height="21">
+                <use xlink:href="#icon-location"></use>
+              </svg>
+              <div>Новосибирск</div>
+            </a>
+          </div>
+          <div class="contacts__item">
+            <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+          </div>
+        </div>
+        <div class="page-header__footer">
+          <ul class="social">
+            <li class="social__item social__item--instagram">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в инстаграмме</span>
+                <svg width="28" height="28">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item social__item--vk">
+              <a class="social__link" href="vk.com">
+                <span class="visually-hidden">Мы во вконтакте</span>
+                <svg width="22" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="page-header__question" href="#"><span>?&#160;</span>Задать вопрос</a>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Квесты Escape Room</h1>
+      <section class="quest-page">
+        <h2 class="quest-page__title">Маньяк</h2>
+          <div class="quest-page__style">хоррор, триллер</div>
+          <div class="quest-page__properties">
+            <div class="quest-page__length">60 мин</div>
+            <div class="quest-page__guests-ammount">3–4 чел</div>
+            <div class="quest-page__level">средняя сложность</div>
+          </div>
+          <p class="quest-page__text">В комнате с приглушённым светом несколько человек, незнакомых друг с другом, приходят в себя. Никто не помнит, что произошло прошлым вечером. Руки и ноги связаным, но одному из вас получилось освободиться. На стене висит пугающий таймер и запущен отстёт 60 минут. Сможете ли вы разобраться в стрессовой ситуации, помочь другим, разобраться что произошло и выбраться из комнаты?</p>
+          <a class="quest-page__book" href="#">забронировать</a>
+      </section>
+    </main>
+    <footer class="page-footer page-footer">
+      <ul class=" page-footer__social social">
+        <li class="social__item social__item--instagram">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Мы в инстаграмме</span>
+            <svg width="28" height="28">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--vk">
+          <a class="social__link" href="vk.com">
+            <span class="visually-hidden">Мы во вконтакте</span>
+            <svg width="22" height="12">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__question js-question-link" href="#"><span>?&#160;</span>Задать вопрос</a>
+    </footer>
+    <section class="modal town town--hidden">
+      <div class="town__header">
+        <h2 class="town__title">Ваш город</h2>
+        <button class="town__toggle js-town-close-toggle" type="button" aria-label="close">
+          <span class="town__close-toggle"></span>
+        </button>
+      </div>
+      <a class="town__link" href="#">
+        <svg width="20" height="20">
+          <use xlink:href="#icon-target"></use>
+        </svg>
+        <div>Определить местоположение</div>
+      </a>
+      <h2 class="town__list-title">... или выберите вручную</h2>
+      <ul class="town__list">
+        <li class="town__item town__item--current">Новосибирск</li>
+        <li class="town__item">Иркутск</li>
+        <li class="town__item">Смоленск</li>
+        <li class="town__item">Волгоград</li>
+        <li class="town__item">Комсомольск-на-Амуре</li>
+      </ul>
+    </section>
+    <section class="modal question question--hidden">
+      <div class="question__header">
+        <h2 class="question__title">Задайте вопрос</h2>
+        <button class="question__toggle js-question-close-toggle" type="button" aria-label="close">
+          <span class="question__close-toggle"></span>
+        </button>
+      </div>
+      <form class="question__form form" action="https://escaperoom.ru" method="post">
+        <fieldset class="form__item">
+          <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+          <input class="form__input" id="name" type="text" placeholder="Имя">
+        </fieldset>
+        <fieldset class="form__item">
+          <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+          <input class="form__input" id="email" type="email" placeholder="E-mail">
+        </fieldset>
+        <fieldset class="form__item">
+          <h3 class="form__textarea-title">Ваш вопрос:</h3>
+          <textarea id="question-text" name="question" rows="4" placeholder="Начните вводить ..."></textarea>
+        </fieldset>
+        <button class="form__send" type="submit">Отправить вопрос</button>
+        <div class="form__confirmation">
+          <div class="form__checkbox-wrapper">
+            <input class="visually-hidden form__checkbox" type="checkbox" name="confirmation" id="confirmation-field">
+            <label class="form__checkbox-label" for="confirmation-field"><span class="visually-hidden">Согласен</span></label>
+          </div>
+          <div class="form__confirmation-text">Я согласен с&#160;<a class="form__agreement" href="#">правилами обработки персональных данных </a>и пользовательским соглашением</div>
+        </div>
+      </form>
+    </section>
+    <div class="blackout blackout--none"></div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

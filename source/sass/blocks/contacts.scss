@@ -1,11 +1,8 @@
-
 .contacts {
-  @include reset-list;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 266px;
-  margin-left: 24px;
 }
 
 .contacts__phone {
@@ -39,11 +36,11 @@
 @media (max-width: $mobile-width) {
   .contacts {
     flex-direction: column;
-    order: -1;
     padding: 30px 0 40px;
     width: 326px;
     margin: 0 auto;
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    order: 0;
   }
 
   .contacts__town-link {

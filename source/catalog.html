@@ -14,7 +14,7 @@
     <div style="display: none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <header class="page-header page-header--menu-closed">
+    <header class="page-header page-header--menu-closed page-header--catalog">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo-link" href="index.html">
@@ -27,8 +27,8 @@
         </div>
         <nav class="main-nav">
           <ul class="main-nav__menu-list menu">
-            <li class="menu__item">
-              <a class="menu__link" href="catalog.html">Квесты</a>
+            <li class="menu__item menu__item--current">
+              <a class="menu__link menu__link">Квесты</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Новичкам</a>
@@ -43,41 +43,41 @@
               <a class="menu__link" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="main-nav__contacts-list contacts">
-            <li class="contacts__item">
-              <a class="contacts__town-link js-town-link" href="#">
-                <svg width="16" height="21">
-                  <use xlink:href="#icon-location"></use>
+        </nav>
+        <div class="page-header__contacts-list contacts">
+          <div class="contacts__item">
+            <a class="contacts__town-link js-town-link" href="#">
+              <svg width="16" height="21">
+                <use xlink:href="#icon-location"></use>
+              </svg>
+              <div>Новосибирск</div>
+            </a>
+          </div>
+          <div class="contacts__item">
+            <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+          </div>
+        </div>
+        <div class="page-header__footer">
+          <ul class="social">
+            <li class="social__item social__item--instagram">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в инстаграмме</span>
+                <svg width="28" height="28">
+                  <use xlink:href="#icon-instagram"></use>
                 </svg>
-                <div>Новосибирск</div>
               </a>
             </li>
-            <li class="contacts__item">
-              <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+            <li class="social__item social__item--vk">
+              <a class="social__link" href="vk.com">
+                <span class="visually-hidden">Мы во вконтакте</span>
+                <svg width="22" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-          <div class="main-nav__footer">
-            <ul class="social">
-              <li class="social__item social__item--instagram">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в инстаграмме</span>
-                  <svg width="28" height="28">
-                    <use xlink:href="#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--vk">
-                <a class="social__link" href="vk.com">
-                  <span class="visually-hidden">Мы во вконтакте</span>
-                  <svg width="22" height="12">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <a class="main-nav__question" href="#"><span>?&#160;</span>Задать вопрос</a>
-          </div>
-        </nav>
+          <a class="page-header__question" href="#"><span>?&#160;</span>Задать вопрос</a>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -149,7 +149,7 @@
                 </a>
               </li>
               <li class="quests__item theme">
-                <a class="theme__link" href="#">
+                <a class="theme__link" href="maniac-quest.html">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Маньяк</h3>
                     <div class="theme__address">Верхнетецкая, 32</div>
@@ -277,7 +277,7 @@
             </ul>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--catalog">
       <ul class=" page-footer__social social">
         <li class="social__item social__item--instagram">
           <a class="social__link" href="#">
