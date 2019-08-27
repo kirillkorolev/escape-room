@@ -13,6 +13,16 @@
   font-weight: 600;
 }
 
+.contacts__phone:hover {
+  color: $orange-hover;
+  border-bottom: 1px dashed $orange-hover;
+}
+
+.contacts__phone:active,
+.contacts__town-link:active {
+  opacity: 0.7;
+}
+
 .contacts__town-link {
   font-size: 12px;
   line-height: 14px;
@@ -21,6 +31,9 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+
+  border: none;
+  background-color: transparent;
 }
 
 .contacts__town-link div {

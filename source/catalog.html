@@ -2,11 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <title>Escape Room</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="preload" href="css/style.min.css" as="style">
-    <title>Escape Room</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,800&display=swap" rel="stylesheet">
+    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Raleway-SemiBold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="./js/picturefill.min.js" async></script>
   </head>
@@ -46,12 +51,12 @@
         </nav>
         <div class="page-header__contacts-list contacts">
           <div class="contacts__item">
-            <a class="contacts__town-link js-town-link" href="#">
+            <button class="contacts__town-link js-town-link" href="#">
               <svg width="16" height="21">
                 <use xlink:href="#icon-location"></use>
               </svg>
               <div>Новосибирск</div>
-            </a>
+            </button>
           </div>
           <div class="contacts__item">
             <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
@@ -137,10 +142,24 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Склеп</h3>
-                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>пр. Ленина, 37</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">2-5 чел</div>
-                      <div class="theme__level">сложный</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>2-5 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>сложный</span>
                     </div>
                   </div>
                   <div class="theme__hit-wrapper">
@@ -152,10 +171,25 @@
                 <a class="theme__link" href="maniac-quest.html">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Маньяк</h3>
-                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Верхнетецкая, 32</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">3-5 чел</div>
-                      <div class="theme__level">средний</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>3-5 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>средний</span>
+                      </div>
                     </div>
                   </div>
                   <div class="theme__hit-wrapper">
@@ -167,10 +201,25 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Ритуал</h3>
-                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>пр. Ленина, 37</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">3-5 чел</div>
-                      <div class="theme__level">сложный</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>3-5 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>сложный</span>
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -179,10 +228,25 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">История призраков</h3>
-                    <div class="theme__address">Новослободская, 2а</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Новослободская, 2а</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">5-6 чел</div>
-                      <div class="theme__level">легкий</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>5-6 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>легкий</span>
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -191,10 +255,25 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Тайны старого особняка</h3>
-                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>пр. Ленина, 37</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">2-5 чел</div>
-                      <div class="theme__level">легкий</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>2-5 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>легкий</span>
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -203,10 +282,26 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Хижина в лесу</h3>
-                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Верхнетецкая, 32</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">4-7 чел</div>
-                      <div class="theme__level">средний</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>4-7 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>средний</span>
+
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -215,10 +310,25 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Фатальный эксперимент</h3>
-                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Верхнетецкая, 32</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">5-8 чел</div>
-                      <div class="theme__level">сложный</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>5-8 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>сложный</span>
+                      </div>
                     </div>
                   </div>
                   <div class="theme__hit-wrapper">
@@ -230,10 +340,26 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Метро 2033</h3>
-                    <div class="theme__address">Новослободская, 2а</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Новослободская, 2а</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">6-8 чел</div>
-                      <div class="theme__level">средний</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>6-8 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>средний</span>
+
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -242,10 +368,26 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Старый чердкак</h3>
-                    <div class="theme__address">Новослободская, 2а</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Новослободская, 2а</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">2-3 чел</div>
-                      <div class="theme__level">легкий</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>2-3 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>легкий</span>
+
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -254,10 +396,25 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Последний рубеж</h3>
-                    <div class="theme__address">Верхнетецкая, 32</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>Верхнетецкая, 32</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">4-7 чел</div>
-                      <div class="theme__level">средний</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>4-7 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>средний</span>
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -266,10 +423,25 @@
                 <a class="theme__link" href="#">
                   <div class="theme__wrapper">
                     <h3 class="theme__name">Марс-2056</h3>
-                    <div class="theme__address">пр. Ленина, 37</div>
+                    <div class="theme__address">
+                      <svg width="11" height="14">
+                        <use xlink:href="#icon-location-orange"></use>
+                      </svg>
+                      <span>пр. Ленина, 37</span>
+                    </div>
                     <div class="theme__details">
-                      <div class="theme__guests-ammount">2-4 чел</div>
-                      <div class="theme__level">легкий</div>
+                      <div class="theme__guests-ammount">
+                        <svg width="11" height="14">
+                          <use xlink:href="#icon-person"></use>
+                        </svg>
+                        <span>2-4 чел</span>
+                      </div>
+                      <div class="theme__level">
+                        <svg width="14" height="14">
+                          <use xlink:href="#icon-puzzle"></use>
+                        </svg>
+                        <span>сложный</span>
+                      </div>
                     </div>
                   </div>
                 </a>

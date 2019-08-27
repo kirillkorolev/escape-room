@@ -4,6 +4,8 @@
   color: $gray;
   font-weight: 500;
   border-bottom: 1px dashed $gray;
+  border: none;
+  background-color: transparent;
 }
 
 .page-footer__question:hover {
