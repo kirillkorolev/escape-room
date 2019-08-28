@@ -8,28 +8,24 @@
 }
 
 .theme__hit {
+  width: 63px;
+  padding: 6px 14px 6px 12px;
+  border-radius: 25px;
+  border: 2px solid rgba(242, 137, 15, 0.74);
+  position: absolute;
+  top: 17px;
+  right: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.theme__hit span {
   font-size: 12px;
   line-height: 17px;
   font-weight: 500;
   color: $gray;
-  display: inline-block;
-  vertical-align: top;
-  width: 63px;
-  padding: 5px 5px 5px 25px;
-  border-radius: 25px;
-  border: 2px solid rgba(242, 137, 15, 0.74);
-  position: relative;
 }
 
-.theme__hit::before {
-  position: absolute;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-image: url("../img/icons/icon-star.svg");
-  left: 8px;
-  top: 5px;
-}
 
 .theme__address,
 .theme__guests-ammount,
@@ -83,12 +79,6 @@
   background-size: 100% 160px;
   background-position: 0 72px;
   background-repeat: no-repeat;
-}
-
-.theme__hit-wrapper {
-  position: absolute;
-  top: 17px;
-  right: 19px;
 }
 
 .theme:nth-child(3n-1) {

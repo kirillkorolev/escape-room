@@ -1,9 +1,9 @@
 .main-nav {
   display: flex;
-  margin-right: 114px;
+  margin-right: 9%;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: 700px) {
   .main-nav {
     flex-direction: column;
     margin-right: 0;

@@ -19,80 +19,83 @@
     <div style="display: none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <div class="container">
-      <header class="page-header page-header--menu-closed">
-        <div class="page-header__container">
-          <div class="page-header__wrapper">
-            <a class="page-header__logo-link">
-              <picture>
-                <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
-                <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
-              </picture>
-            </a>
-            <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
-          </div>
-          <nav class="main-nav">
-            <ul class="main-nav__menu-list menu">
-              <li class="menu__item">
-                <a class="menu__link" href="catalog.html">Квесты</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Новичкам</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Отзывы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Акции</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="page-header__contacts-list contacts">
-            <div class="contacts__item">
-              <button class="contacts__town-link js-town-link" type="button">
-                <svg width="16" height="21">
-                  <use xlink:href="#icon-location"></use>
-                </svg>
-                <div>Новосибирск</div>
-              </button>
+      <div class="page-header__block">
+        <header class="page-header page-header--menu-closed">
+          <div class="page-header__container">
+            <div class="page-header__wrapper">
+              <a class="page-header__logo-link">
+                <picture>
+                  <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
+                  <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
+                </picture>
+              </a>
+              <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
             </div>
-            <div class="contacts__item">
-              <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+            <nav class="main-nav">
+              <ul class="main-nav__menu-list menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="catalog.html">Квесты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Новичкам</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-header__contacts-list contacts">
+              <div class="contacts__item">
+                <button class="contacts__town-link js-town-link" type="button">
+                  <svg width="16" height="21">
+                    <use xlink:href="#icon-location"></use>
+                  </svg>
+                  <div>Новосибирск</div>
+                </button>
+              </div>
+              <div class="contacts__item">
+                <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+              </div>
+            </div>
+            <div class="page-header__footer">
+              <ul class="social">
+                <li class="social__item social__item--instagram">
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">Мы в инстаграмме</span>
+                    <svg width="28" height="28">
+                      <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item social__item--vk">
+                  <a class="social__link" href="vk.com">
+                    <span class="visually-hidden">Мы во вконтакте</span>
+                    <svg width="22" height="12">
+                      <use xlink:href="#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <button class="page-header__question" type="button"><span>?&#160;</span>Задать вопрос</button>
             </div>
           </div>
-          <div class="page-header__footer">
-            <ul class="social">
-              <li class="social__item social__item--instagram">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в инстаграмме</span>
-                  <svg width="28" height="28">
-                    <use xlink:href="#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--vk">
-                <a class="social__link" href="vk.com">
-                  <span class="visually-hidden">Мы во вконтакте</span>
-                  <svg width="22" height="12">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <button class="page-header__question" type="button"><span>?&#160;</span>Задать вопрос</button>
-          </div>
-        </div>
-      </header>
+        </header>
+      </div>
       <main class="page-main">
         <h1 class="visually-hidden">Квесты Escape Room</h1>
         <section class="promotion">
-          <div class="promotion__container">
-            <h2 class="promotion__title">Лучшие квесты<br>в Новосибирске</h2>
-            <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
-            <a class="promotion__link" href="#">Выбрать квест</a>
+          <div class="promotion__block">
+            <div class="promotion__container">
+              <h2 class="promotion__title">Лучшие квесты<br>в Новосибирске</h2>
+              <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
+              <a class="promotion__link" href="#">Выбрать квест</a>
+            </div>
           </div>
         </section>
       </main>
@@ -117,7 +120,7 @@
         </ul>
         <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
       </footer>
-    </div>
+
     <section class="modal town town--hidden">
       <div class="town__header">
         <h2 class="town__title">Ваш город</h2>

@@ -30,10 +30,10 @@
 }
 
 
-@media (max-width: $mobile-width) {
+@media (max-width: 700px) {
   .menu {
     flex-direction: column;
-    width: $mobile-width;
+    //width: auto;
     margin-bottom: 80px;
   }
 

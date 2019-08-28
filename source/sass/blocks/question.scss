@@ -60,7 +60,7 @@
   transform: rotate(-45deg);
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: 700px) {
   .question {
     padding: 32px 16px 47px;
     position: absolute;
