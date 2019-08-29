@@ -25,6 +25,7 @@
   @include reset-list;
   margin-bottom: 39px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .quests__categories-item {
@@ -39,7 +40,19 @@
 
 .quests__categories-item:not(:last-child) {
   border-right: 1px solid rgba(255, 255, 255, 0.22);
+  padding-right: 31px;
+}
+
+.quests__categories-item:nth-child(3) {
+  padding-right: 35px;
+}
+
+.quests__categories-item:nth-child(4) {
   padding-right: 40px;
+}
+
+.quests__categories-item:nth-child(5) {
+  padding-right: 35px;
 }
 
 .quests__label {
@@ -51,7 +64,8 @@
 }
 
 .quests {
-  width: 1080px;
+  width: auto;
+  max-width: 1080px;
   margin: 0 auto;
   padding-top: 122px;
 }
@@ -70,20 +84,21 @@
 }
 
 
-@media (max-width: $mobile-width) {
+@media (max-width: 767px) {
   .quests {
-    padding-top: 28px;
-    width: 328px;
+    padding: 87px 16px 0;
+    max-width: 767px;
     margin: 0 auto;
   }
 
   .quests__title {
-    margin-bottom: 8px;
+    margin-bottom: 11px;
   }
 
   .quests__text {
     font-size: 36px;
     line-height: 40px;
+    margin-bottom: 40px;
   }
 
   .quests__categories-item {
@@ -91,12 +106,21 @@
     flex-shrink: 0;
   }
 
+  .quests__categories-list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
   .quests__categories-item:not(:first-child) {
     padding-left: 16px;
   }
 
   .quests__categories-item:not(:last-child) {
-    padding-right: 16px;
+    padding-right: 10px;
+  }
+
+  .quests__categories-item:first-child {
+    padding-right: 11px;
   }
 
   .quests__categories-item:first-child svg {
@@ -110,5 +134,6 @@
 
   .quests__list {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 }

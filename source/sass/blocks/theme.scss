@@ -3,18 +3,18 @@
   line-height: 29px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
   color: $white;
 }
 
 .theme__hit {
-  width: 63px;
-  padding: 6px 14px 6px 12px;
+  width: 67px;
+  padding: 3px 17px 4px 16px;
   border-radius: 25px;
   border: 2px solid rgba(242, 137, 15, 0.74);
   position: absolute;
   top: 17px;
-  right: 19px;
+  right: 23px;
   display: flex;
   align-items: center;
 }
@@ -41,6 +41,19 @@
   font-style: normal;
   display: flex;
   align-items: center;
+  margin-bottom: 7px;
+}
+
+.theme__address span {
+  margin-left: 5px;
+}
+
+.theme__guests-ammount span {
+  margin-left: 10px;
+}
+
+.theme__level span {
+  margin-left: 9px;
 }
 
 .theme__guests-ammount {
@@ -63,6 +76,7 @@
   background-size: 100% 232px;
   position: relative;
   margin-bottom: 32px;
+  justify-content: space-between;
 }
 
 .theme:hover {
@@ -74,7 +88,7 @@
 }
 
 .theme__wrapper {
-  padding: 129px 90px 20px 19px;
+  padding: 132px 90px 20px 15px;
   background-image: linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%);
   background-size: 100% 160px;
   background-position: 0 72px;
@@ -82,7 +96,7 @@
 }
 
 .theme:nth-child(3n-1) {
-  margin: 0 24px;
+  margin: 0 24px 32px;
 }
 
 .theme:first-child {
@@ -179,28 +193,31 @@
   background-image: url("../img/backgrounds/bg-theme-11@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-12@2x.jpg");
+    background-image: url("..//img/backgrounds/bg-theme-11@2x.jpg");
     background-size: 100% auto;
   }
 }
 
 .theme:nth-child(5) .theme__wrapper,
 .theme:nth-child(7) .theme__wrapper {
-  padding-top: 100px;
+  padding-top: 104px;
 }
 
 .theme__details {
   display: flex;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: 767px) {
   .theme:nth-child(3n-1) {
-    margin: 0 0 16px;
+    margin: 0 auto;
+    margin-bottom: 16px;
   }
 
   .theme {
     width: 328px;
-    margin: 0 0 16px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    flex-grow: -1;
   }
 
   .theme__hit-wrapper {

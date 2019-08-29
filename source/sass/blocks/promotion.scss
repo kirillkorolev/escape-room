@@ -16,13 +16,13 @@
   color: $gray;
   margin-top: 0;
   margin-bottom: 69px;
-  padding-right: 45px;
+  padding-right: 446px;
 }
 
 .promotion {
   background-image: url("../img/backgrounds/bg-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
   background-size: 100% auto;
   margin-top: -83px;
 
@@ -33,7 +33,7 @@
 }
 
 .promotion__container {
-  padding: 200px 709px 152px 136px;
+  padding: 200px 308px 152px 136px;
   z-index: 10;
 }
 
@@ -56,7 +56,7 @@
   background-color: $orange-hover;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .promotion__title {
     font-size: 36px;
     line-height: 40px;

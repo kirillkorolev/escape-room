@@ -3,9 +3,11 @@
   line-height: 17px;
   color: $gray;
   font-weight: 500;
-  border-bottom: 1px dashed $gray;
   border: none;
   background-color: transparent;
+  padding: 0;
+  display: inline;
+  border-bottom: 1px dotted $gray;
 }
 
 .page-footer__question:hover {
@@ -22,25 +24,36 @@
 }
 
 .page-footer {
+  width: auto;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 32px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 52px;
 
   &--catalog {
+    width: 100%;
     position: fixed;
-    background-image: linear-gradient(180deg, rgba(19, 18, 18, 0) 0%, #131212 100%);
+    bottom: 0;
+    left: 0;
+
+    .page-footer__wrapper {
+      background-image: linear-gradient(180deg, rgba(19, 18, 18, 0) 0%, #131212 100%);
+    }
   }
 }
 
-@media (max-width: 700px) {
+.page-footer__wrapper {
+  width: 100%;
+  display: flex;
+  padding: 0 32px 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  margin-bottom: -52px;
+  position: absolute;
+  bottom: 52px;
+  left: 0;
+}
+
+@media (max-width: 767px) {
   .page-footer {
     display: none;
   }
