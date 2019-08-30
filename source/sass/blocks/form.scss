@@ -113,7 +113,7 @@
   left: 4px;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: 767px) {
   .form__input {
     width: 320px;
   }

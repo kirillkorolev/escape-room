@@ -9,7 +9,7 @@
   z-index: 25;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: 767px) {
   .modal {
     width: 360px;
     top: 0;

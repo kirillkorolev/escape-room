@@ -3,6 +3,7 @@
   font-weight: 900;
   font-size: 92px;
   line-height: 87px;
+  margin-bottom: 32px;
 }
 
 .quest-page__style {
@@ -10,6 +11,8 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  order: -1;
+  margin-bottom: 8px;
 }
 
 .quest-page__properties {
@@ -17,6 +20,8 @@
   font-size: 14px;
   line-height: 20px;
   display: flex;
+  margin-bottom: 20px;
+  padding-left: 32px;
 }
 
 .quest-page__text {
@@ -25,6 +30,8 @@
   font-size: 15px;
   line-height: 22px;
   color: $gray;
+  margin-bottom: 40px;
+  padding: 0 128px 0 32px;
 }
 
 .quest-page__book {
@@ -39,57 +46,172 @@
   padding: 22px 0;
   font-weight: 800;
   line-height: 20px;
+  margin-left: 32px;
 }
 
 .quest-page__book:hover {
   background-color: $orange-hover;
 }
 
+.quest-page__length,
+.quest-page__guests-ammount,
+.quest-page__level {
+  display: flex;
+  align-items: center;
+}
+
 .quest-page__length {
-  padding: 8px 24px 8px 26px;
+  padding: 8px 24px 8px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.36);
-  position: relative;
+}
+
+.quest-page__length span {
+  padding-left: 6px;
 }
 
 .quest-page__guests-ammount {
-  padding: 8px 25px 8px 46px;
+  padding: 8px 25px 8px 26px;
   border-right: 1px solid rgba(255, 255, 255, 0.36);
-  position: relative;
+}
+
+.quest-page__guests-ammount span {
+  padding-left: 6px;
 }
 
 .quest-page__level {
-  padding: 8px 0 8px 56px;
-  position: relative;
+  padding: 8px 0 8px 26px;
 }
 
-.quest-page__length::before,
-.quest-page__guests-ammount::before,
-.quest-page__level::before {
-  position: absolute;
-  content: "";
+.quest-page__level span {
+  padding-left: 9px;
+}
+
+.quest-page {
   background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+
+
+  &--maniac {
+    background-image: url("../img/backgrounds/bg-maniac-quest@1x.jpg");
+    margin-top: -54px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/bg-maniac-quest@2x.jpg");
+    }
+  }
+
+  &--old-house {
+    background-image: url("../img/backgrounds/bg-old-house-quest@1x.jpg");
+    margin-top: -73px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/bg-old-house-quest@2x.jpg");
+    }
+  }
+
+  &--riual {
+    margin-top: -71px;
+    background-image: url("../img/backgrounds/bg-ritual-quest@1x.jpg");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/backgrounds/bg-ritual-quest@2x.jpg");
+  }
 }
 
-.quest-page__length::before {
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icons/icon-clock.svg");
-  top: 10px;
-  left: 2px;
+.quest-page__container {
+  padding: 180px 86px 177px 600px;
+  display: flex;
+  flex-direction: column;
 }
 
-.quest-page__guests-ammount::before {
-  width: 16px;
-  height: 21px;
-  background-image: url("../img/icons/icon-person.svg");
-  top: 12px;
-  left: 26px;
-}
+@media (max-width: 767px) {
+  .quest-page__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
 
-.quest-page__level::before {
-  width: 21px;
-  height: 21px;
-  background-image: url("../img/icons/icon-puzzle.svg");
-  top: 12px;
-  left: 26px;
+  .quest-page__length,
+  .quest-page__guests-ammount,
+  .quest-page__level {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    border: none;
+  }
+
+  .quest-page__level span,
+  .quest-page__guests-ammount span,
+  .quest-page__length span {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  .quest-page__guests-ammount {
+    padding: 0 24px;
+    border-left: 1px solid rgba(255, 255, 255, 0.36);
+    border-right: 1px solid rgba(255, 255, 255, 0.36);
+    min-width: 120px;
+  }
+
+  .quest-page__level {
+    padding-left: 24px;
+    min-width: 104px;
+  }
+
+  .quest-page__length {
+    padding-right: 24px;
+    min-width: 104px;
+  }
+
+  .quest-page {
+    margin-top: -55px;
+
+    &--maniac {
+      background-image: url("../img/backgrounds/bg-filter-quest-mobile@1x.png"), url("../img/backgrounds/bg-maniac-quest-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/backgrounds/bg-filter-quest-mobile@2x.png"), url("../img/backgrounds/bg-maniac-quest-mobile@2x.jpg");
+      }
+    }
+
+    &--old-house {
+      background-image: url("../img/backgrounds/bg-filter-quest-mobile@1x"), url("../img/backgrounds/bg-old-house-quest-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/backgrounds/bg-filter-quest-mobile@2x"), url("../img/backgrounds/bg-old-house-quest-mobile@2x.jpg");
+      }
+    }
+
+    &--riual {
+      background-image: url("../img/backgrounds/bg-filter-quest-mobile@1x"), url("../img/backgrounds/bg-ritual-mobile@1x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/bg-filter-quest-mobile@2x"), url("../img/backgrounds/bg-ritual-mobile@2x.jpg");
+    }
+  }
+
+  .quest-page__container {
+    padding: 395px 16px 58px;
+    width: auto;
+    max-width: 747px;
+    background-image: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: 0 0;
+  }
+
+  .quest-page__text {
+    padding: 0;
+  }
+
+  .quest-page__book {
+    margin-left: 0;
+  }
+
+  .quest-page__properties {
+    padding-left: 0;
+  }
 }
