@@ -95,10 +95,6 @@
   background-repeat: no-repeat;
 }
 
-.theme:nth-child(3n-1) {
-  margin: 0 24px 32px;
-}
-
 .theme:first-child {
   background-image: url("../img/backgrounds/bg-theme-1@1x.jpg");
 
@@ -214,10 +210,11 @@
   }
 
   .theme {
-    width: 328px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 16px;
-    flex-grow: -1;
+    //flex-grow: -1;
+    height: 100%;
   }
 
   .theme__hit-wrapper {

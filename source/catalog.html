@@ -20,8 +20,8 @@
       <include src="build/img/sprite_auto.svg"></include>
     </div>
     <div class="page-header__block ">
-      <header class="page-header page-header--menu-closed page-header--catalog">
-        <div class="page-header__container">
+      <header class="page-header  page-header--menu-closed ">
+        <div class="page-header__container page-header__container--catalog">
           <div class="page-header__wrapper">
             <a class="page-header__logo-link" href="index.html">
               <picture>
@@ -31,61 +31,61 @@
             </a>
             <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
           </div>
-        <div class="page-header__test">
-          <nav class="main-nav">
-            <ul class="main-nav__menu-list menu">
-              <li class="menu__item menu__item--current">
-                <a class="menu__link">Квесты</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Новичкам</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Отзывы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Акции</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="page-header__contacts-list contacts">
-            <div class="contacts__item">
-              <button class="contacts__town-link js-town-link" type="button">
-                <svg width="16" height="21">
-                  <use xlink:href="#icon-location"></use>
-                </svg>
-                <div>Новосибирск</div>
-              </button>
+          <div class="page-header__menu-wrapper">
+            <nav class="main-nav">
+              <ul class="main-nav__menu-list menu">
+                <li class="menu__item menu__item--current">
+                  <a class="menu__link">Квесты</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Новичкам</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-header__contacts-list contacts">
+              <div class="contacts__item">
+                <button class="contacts__town-link js-town-link" type="button">
+                  <svg width="16" height="21">
+                    <use xlink:href="#icon-location"></use>
+                  </svg>
+                  <div>Новосибирск</div>
+                </button>
+              </div>
+              <div class="contacts__item">
+                <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+              </div>
             </div>
-            <div class="contacts__item">
-              <a class="contacts__phone" href="tel:+73832840160">8 (383) 284 01 60</a>
+            <div class="page-header__footer">
+              <ul class="social">
+                <li class="social__item social__item--instagram">
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">Мы в инстаграмме</span>
+                    <svg width="28" height="28">
+                      <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item social__item--vk">
+                  <a class="social__link" href="vk.com">
+                    <span class="visually-hidden">Мы во вконтакте</span>
+                    <svg width="22" height="12">
+                      <use xlink:href="#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <button class="page-header__question js-question-mobile-link" type="button"><span>?&#160;</span>Задать вопрос</button>
             </div>
           </div>
-          <div class="page-header__footer">
-            <ul class="social">
-              <li class="social__item social__item--instagram">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в инстаграмме</span>
-                  <svg width="28" height="28">
-                    <use xlink:href="#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item social__item--vk">
-                <a class="social__link" href="vk.com">
-                  <span class="visually-hidden">Мы во вконтакте</span>
-                  <svg width="22" height="12">
-                    <use xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <button class="page-header__question" type="button"><span>?&#160;</span>Задать вопрос</button>
-          </div>
-        </div>
         </div>
       </header>
     </div>
@@ -317,7 +317,7 @@
               </a>
             </li>
             <li class="quests__item theme">
-              <a class="theme__link" href="#">
+              <a class="theme__link" href="experiment-quest.html">
                 <div class="theme__wrapper">
                   <h3 class="theme__name">Фатальный эксперимент</h3>
                   <div class="theme__address">

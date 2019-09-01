@@ -1,0 +1,172 @@
+.date-setting__quest-title {
+  font-weight: 900;
+  font-size: 92px;
+  line-height: 92px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: 80px;
+}
+
+.date-setting__setting {
+  color: $orange;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  order: -1;
+  margin-bottom: 6px;
+  padding-left: 6px;
+}
+
+.date-setting__date-booking,
+.date-setting__payment {
+  color: $white;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  width: 122px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid $orange;
+}
+
+.date-setting__date-booking span,
+.date-setting__payment span {
+  display: block;
+  border: 4px solid transparent;
+  border-left: 4px solid $white;
+  margin-left: 6px;
+}
+
+.date-setting__date-booking {
+  margin-right: 24px;
+}
+
+.date-setting__payment {
+  width: 141px;
+  margin-left: 0;
+}
+
+.date-setting__details {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  width: 162px;
+  margin-right: 80px;
+}
+
+.date-setting__date-booking:hover {
+  color: $orange-hover;
+  border-bottom-color: $orange-hover;
+}
+
+.date-setting__date-booking:hover span {
+  border-left-color: $orange-hover;
+}
+
+.date-setting__date-booking:active {
+  opacity: 0.7;
+}
+
+.date-setting__wrapper {
+  max-width: 1100px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  padding: 138px 10px 159px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.date-setting__title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-setting__time-choise {
+  border-top: 1px solid rgba(230, 230, 230, 0.65);
+  padding: 43px 47px 0;
+  margin-top: 16px;
+  width: auto;
+  max-width: 1080px;
+}
+
+
+.date-setting {
+  margin-top: -73px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--maniac-quest {
+    background-image: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #1a140d 89.63%, #1a140d 106.79%), url("../img/backgrounds/bg-maniac-quest-booking@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #1a140d 89.63%, #1a140d 106.79%), url("../img/backgrounds/bg-maniac-quest-booking@2x.jpg");
+      background-size: 100% auto;
+    }
+  }
+}
+
+.date-setting__booked {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.date-setting__date-container {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+@media (max-width: 767px) {
+  .date-setting__quest-title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .date-setting__wrapper {
+    width: 100%;
+    padding: 138px 16px 93px;
+  }
+
+  .date-setting__date-booking {
+    margin-left: 0;
+  }
+
+  .date-setting {
+    margin-top: -105px;
+
+    background-image: url("../img/backgrounds/bg-quest-booking-filter@1x.png"), url("../img/backgrounds/bg-maniac-quest-booking-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/bg-quest-booking-filter@2x.png"), url("../img/backgrounds/bg-maniac-quest-booking-mobile@2x.png");
+    }
+  }
+
+  .date-setting__title-container {
+    order: -1;
+  }
+
+  .date-setting__time-choise {
+    order: 0;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .date-setting__details {
+    order: 1;
+    margin-right: 0;
+    width: 261px;
+  }
+
+  .time-setting__description-list {
+    flex-wrap: wrap;
+  }
+
+  .date-setting__payment {
+    order: 2;
+    text-align: left;
+    margin-top: 24px;
+  }
+}

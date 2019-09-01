@@ -9,12 +9,17 @@
 }
 
 .form__label,
-.forn__textarea-title {
+.form__textarea-title {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   color: $gray;
   margin-bottom: 12px;
+}
+
+.form__textarea-title {
+  margin-top: 0;
+  margin-bottom: 14px;
 }
 
 .forn__textarea-title {
@@ -33,6 +38,16 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+.form__input:required:valid {
+  border-color: green;
+  border-radius: 3px;
+}
+
+.form__input:invalid {
+  border-color: $orange;
+  opacity: 0.64;
+}
+
 .form__item textarea {
   width: 400px;
   border-radius: 3px;
@@ -42,7 +57,7 @@
   font-size: 14px;
   line-height: 20px;
   color: rgba(230, 230, 230, 0.64);
-  padding: 16px 24px;
+  padding: 16px 24px 0 24px;
   overflow: auto;
 }
 
@@ -113,13 +128,18 @@
   left: 4px;
 }
 
+.form__checkbox:checked + label::before {
+  background-color: $orange;
+  opacity: 1;
+}
+
 @media (max-width: 767px) {
   .form__input {
-    width: 320px;
+    width: 100%;
   }
 
   .form__item textarea {
-    width: 320px;
+    width: 100%;
     min-height: 120px;
   }
 }

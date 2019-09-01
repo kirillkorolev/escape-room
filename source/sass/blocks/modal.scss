@@ -1,5 +1,6 @@
 .modal {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -11,10 +12,11 @@
 
 @media (max-width: 767px) {
   .modal {
-    width: 360px;
+    max-width: none;
     top: 0;
     left: 0;
     transform: none;
     border-radius: 0;
+    height: 100%;
   }
 }

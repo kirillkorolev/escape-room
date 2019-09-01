@@ -11,6 +11,10 @@ var modalQuestion = document.querySelector('.question');
 var questionOpenButton = document.querySelector('.js-question-link');
 var questionCloseButton = document.querySelector('.js-question-close-toggle');
 
+var questionOpenButtonMobile = document.querySelector(
+    '.js-question-mobile-link'
+);
+
 headerToggle.addEventListener('click', function () {
   if (pageHeader.classList.contains('page-header--menu-closed')) {
     pageHeader.classList.remove('page-header--menu-closed');
@@ -21,50 +25,62 @@ headerToggle.addEventListener('click', function () {
   }
 });
 
-townOpenButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalTown.classList.remove('town--hidden');
-  modalTown.classList.add('town--visible');
-  blackout.classList.remove('blackout--none');
-});
-
-townCloseButton.addEventListener('click', function () {
-  modalTown.classList.remove('town--visible');
-  modalTown.classList.add('town--hidden');
-  blackout.classList.add('blackout--none');
-});
-
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (modalTown.classList.contains('town--visible')) {
-      modalTown.classList.remove('town--visible');
-      modalTown.classList.add('town--hidden');
-      blackout.classList.add('blackout--none');
-    }
+var openPopup = function (hiddenClass, visibleClass, openButton, popup) {
+  if (openButton) {
+    openButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.remove(hiddenClass);
+      popup.classList.add(visibleClass);
+      blackout.classList.remove('blackout--none');
+    });
   }
-});
+};
 
-questionOpenButton.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalQuestion.classList.remove('question--hidden');
-  modalQuestion.classList.add('question--visible');
-  blackout.classList.remove('blackout--none');
-});
-
-questionCloseButton.addEventListener('click', function () {
-  modalQuestion.classList.remove('question--visible');
-  modalQuestion.classList.add('question--hidden');
-  blackout.classList.add('blackout--none');
-});
-
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (modalQuestion.classList.contains('question--visible')) {
-      modalQuestion.classList.remove('question--visible');
-      modalQuestion.classList.add('question--hidden');
+var closePopup = function (hiddenClass, visibleClass, closeButton, popup) {
+  if (closeButton) {
+    closeButton.addEventListener('click', function () {
+      popup.classList.remove(visibleClass);
+      popup.classList.add(hiddenClass);
       blackout.classList.add('blackout--none');
-    }
+    });
   }
-});
+};
+
+openPopup('town--hidden', 'town--visible', townOpenButton, modalTown);
+openPopup(
+    'question--hidden',
+    'question--visible',
+    questionOpenButton,
+    modalQuestion
+);
+
+openPopup(
+    'question--hidden',
+    'question--visible',
+    questionOpenButtonMobile,
+    modalQuestion
+);
+
+closePopup('town--hidden', 'town--visible', townCloseButton, modalTown);
+closePopup(
+    'question--hidden',
+    'question--visible',
+    questionCloseButton,
+    modalQuestion
+);
+
+var closePopupWithEsc = function (hiddenClass, visibleClass, popup) {
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains(visibleClass)) {
+        popup.classList.remove(visibleClass);
+        popup.classList.add(hiddenClass);
+        blackout.classList.add('blackout--none');
+      }
+    }
+  });
+};
+
+closePopupWithEsc('town--hidden', 'town--visible', modalTown);
+closePopupWithEsc('question--hidden', 'question--visible', modalQuestion);

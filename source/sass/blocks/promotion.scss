@@ -1,6 +1,7 @@
 .promotion__block {
   max-width: 1366px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .promotion__title {
@@ -16,19 +17,19 @@
   color: $gray;
   margin-top: 0;
   margin-bottom: 69px;
-  padding-right: 446px;
+  max-width: 476px;
 }
 
 .promotion {
   background-image: url("../img/backgrounds/bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: 100% auto;
+  background-size: cover;
+  height: 100%;
   margin-top: -83px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("..//img/backgrounds/bg-desktop@2x.jpg");
-    background-size: 100% auto;
   }
 }
 
@@ -85,7 +86,7 @@
   }
 
   .promotion__container {
-    padding: 360px 16px 64px;
+    padding: 417px 16px 64px;
     text-align: center;
   }
 }

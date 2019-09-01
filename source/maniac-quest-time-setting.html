@@ -19,23 +19,24 @@
     <div style="display: none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-      <div class="page-header__block">
-        <header class="page-header page-header--menu-closed">
-          <div class="page-header__container">
-            <div class="page-header__wrapper">
-              <a class="page-header__logo-link">
-                <picture>
-                  <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
-                  <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
-                </picture>
-              </a>
-              <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
-            </div>
+    <div class="page-header__block ">
+      <header class="page-header page-header--menu-closed">
+        <div class="page-header__container">
+          <div class="page-header__wrapper">
+            <a class="page-header__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
+                <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
+              </picture>
+            </a>
+            <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
+          </div>
+          <a class="page-header__back-link page-header__back-link--quest-page" href="maniac-quest.html"><span></span>описание</a>
           <div class="page-header__menu-wrapper">
             <nav class="main-nav">
               <ul class="main-nav__menu-list menu">
-                <li class="menu__item">
-                  <a class="menu__link" href="catalog.html">Квесты</a>
+                <li class="menu__item menu__item--current">
+                  <a class="menu__link">Квесты</a>
                 </li>
                 <li class="menu__item">
                   <a class="menu__link" href="#">Новичкам</a>
@@ -86,22 +87,107 @@
               <button class="page-header__question js-question-mobile-link" type="button"><span>?&#160;</span>Задать вопрос</button>
             </div>
           </div>
+        </div>
+      </header>
+    </div>
+    <main class="page-main">
+      <h1 class="visually-hidden">Квесты Escape Room</h1>
+      <section class="date-setting date-setting--maniac-quest">
+        <div class="date-setting__wrapper">
+          <div class="date-setting__title-container">
+            <h2 class="date-setting__quest-title">Маньяк</h2>
+            <div class="date-setting__setting">выбранный квест</div>
           </div>
-        </header>
-      </div>
-      <main class="page-main">
-        <h1 class="visually-hidden">Квесты Escape Room</h1>
-        <section class="promotion">
-          <div class="promotion__block">
-            <div class="promotion__container">
-              <h2 class="promotion__title">Лучшие квесты<br>в Новосибирске</h2>
-              <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
-              <a class="promotion__link" href="#">Выбрать квест</a>
+
+          <div class="date-setting__details">Вы выбрали игру 22 марта в 16:00. К оплате 1500 рублей.</div>
+
+          <a class="date-setting__payment" href="#">Перейти к оплате<span></span></a>
+
+
+          <div class="date-setting__time-choise">
+            <div class="date-setting__date-container">
+              <a class="date-setting__date-booking" href="#">Выберите дату<span></span></a>
+              <div class="date-setting__booked">22 марта</div>
+            </div>
+
+            <div class="time-setting">
+              <ul class="time-setting__description-list">
+                <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--transparent"></span><span class="visually-hidden">прозрачный</span> — сводобно</li>
+                <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--orange"></span><span class="visually-hidden">оранжевый</span> — занято</li>
+                <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--green"></span><span class="visually-hidden">зеленый</span> — выбрано вами</li>
+              </ul>
+
+              <form class="time-setting__form">
+                <ul class="time-setting__time-list">
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="9:45" id="9:45">
+                    <label class="time-setting__label" for="9:45">9:45</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="11:00" id="11:00">
+                    <label class="time-setting__label" for="11:00">11:00</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="12:15" id="12:15" disabled>
+                    <label class="time-setting__label" for="12:15">12:15</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="13:30" id="13:30" disabled>
+                    <label class="time-setting__label" for="13:30">13:30</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="14:45" id="14:45">
+                    <label class="time-setting__label" for="14:45">14:45</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="16:00" id="16:00" checked>
+                    <label class="time-setting__label" for="16:00">16:00</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="17:15" id="17:15" disabled>
+                    <label class="time-setting__label" for="17:15">17:15</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="18:30" id="18:30">
+                    <label class="time-setting__label" for="18:30">18:30</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="19:45" id="19:45">
+                    <label class="time-setting__label" for="19:45">19:45</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="21:00" id="21:00">
+                    <label class="time-setting__label" for="21:00">21:00</label>
+                    <span class="time-setting__price">1800 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="22:15" id="22:15" disabled>
+                    <label class="time-setting__label" for="22:15">22:15</label>
+                    <span class="time-setting__price">1800 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="11:00" id="11:00" disabled>
+                    <label class="time-setting__label" for="11:00">23:30</label>
+                    <span class="time-setting__price">1800 ₽</span>
+                  </li>
+                </ul>
+              </form>
             </div>
           </div>
-        </section>
-      </main>
-      <footer class="page-footer">
+
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
         <div class="page-footer__wrapper">
           <ul class=" page-footer__social social">
             <li class="social__item social__item--instagram">

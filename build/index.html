@@ -78,7 +78,7 @@
               </a>
               <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
             </div>
-          <div class="page-header__test">
+          <div class="page-header__menu-wrapper">
             <nav class="main-nav">
               <ul class="main-nav__menu-list menu">
                 <li class="menu__item">
@@ -130,7 +130,7 @@
                   </a>
                 </li>
               </ul>
-              <button class="page-header__question" type="button"><span>?&#160;</span>Задать вопрос</button>
+              <button class="page-header__question js-question-mobile-link" type="button"><span>?&#160;</span>Задать вопрос</button>
             </div>
           </div>
           </div>
@@ -204,7 +204,7 @@
       <form class="question__form form" action="https://escaperoom.ru" method="post">
         <fieldset class="form__item">
           <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Имя">
+          <input class="form__input" id="name" type="text" placeholder="Имя" minlength="3" required="">
         </fieldset>
         <fieldset class="form__item">
           <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>

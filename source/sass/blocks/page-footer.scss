@@ -8,6 +8,7 @@
   padding: 0;
   display: inline;
   border-bottom: 1px dotted $gray;
+  outline: none;
 }
 
 .page-footer__question:hover {
@@ -17,6 +18,10 @@
 
 .page-footer__question span {
   display: none;
+}
+
+.page-footer__question:active {
+  opacity: 0.7;
 }
 
 .page-footer__question:hover span {
@@ -47,10 +52,7 @@
   justify-content: space-between;
   align-items: center;
   height: 52px;
-  margin-bottom: -52px;
-  position: absolute;
-  bottom: 52px;
-  left: 0;
+  margin-top: -52px;
 }
 
 @media (max-width: 767px) {

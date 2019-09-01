@@ -67,8 +67,8 @@
 </symbol></svg>
     </div>
     <div class="page-header__block ">
-      <header class="page-header  page-header--menu-closed ">
-        <div class="page-header__container page-header__container--catalog">
+      <header class="page-header page-header--menu-closed">
+        <div class="page-header__container">
           <div class="page-header__wrapper">
             <a class="page-header__logo-link" href="index.html">
               <picture>
@@ -78,6 +78,7 @@
             </a>
             <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
           </div>
+          <a class="page-header__back-link page-header__back-link--quest-page" href="catalog.html"><span></span>все квесты</a>
           <div class="page-header__menu-wrapper">
             <nav class="main-nav">
               <ul class="main-nav__menu-list menu">
@@ -138,379 +139,36 @@
     </div>
     <main class="page-main">
       <h1 class="visually-hidden">Квесты Escape Room</h1>
-      <section class="quests">
-        <h2 class="quests__title">Квесты в Новосибирске</h2>
-          <p class="quests__text">Выберите тематику</p>
-          <form class="quests__form">
-            <ul class="quests__categories-list">
-              <li class="quests__categories-item">
-                <svg width="26" height="30">
-                  <use xlink:href="#icon-all-quests"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="all-quests" checked="">
-                <label class="quests__label" for="all-quests">Все квесты</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="36" height="30">
-                  <use xlink:href="#icon-adventures"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="adventures">
-                <label class="quests__label" for="adventures">Приключения</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="30" height="30">
-                  <use xlink:href="#icon-horror"></use>
-                </svg>
-
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="horror">
-                <label class="quests__label" for="horror">Ужасы</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="30" height="30">
-                  <use xlink:href="#icon-mysticism"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="mysticism">
-                <label class="quests__label" for="mysticism">Мистика</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="40" height="26">
-                  <use xlink:href="#icon-detective"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="detective">
-                <label class="quests__label" for="detective">Детектив</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="28" height="30">
-                  <use xlink:href="#icon-scifi"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="sci-fi">
-                <label class="quests__label" for="sci-fi">Sci-fi</label>
-              </li>
-            </ul>
-          </form>
-          <ul class="quests__list">
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Склеп</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                  </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
-                </div>
-              </div></a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="maniac-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Маньяк</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>3-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="ritual-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Ритуал</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>3-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">История призраков</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Новослободская, 2а</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>5-6 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>легкий</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="old-house-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Тайны старого особняка</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>легкий</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Хижина в лесу</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>4-7 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
-
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="experiment-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Фатальный эксперимент</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>5-8 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Метро 2033</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Новослободская, 2а</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>6-8 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
-
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Старый чердкак</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Новослободская, 2а</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-3 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>легкий</span>
-
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Последний рубеж</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>4-7 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Марс-2056</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-4 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+      <section class="quest-page quest-page--experiment">
+        <div class="quest-page__container">
+          <h2 class="quest-page__title">Фатальный эксперимент</h2>
+          <div class="quest-page__style">приключение, детектив</div>
+          <div class="quest-page__properties">
+            <div class="quest-page__length">
+              <svg width="20" height="20">
+                <use xlink:href="#icon-clock"></use>
+              </svg>
+              <span>90 мин</span>
+            </div>
+            <div class="quest-page__guests-ammount">
+              <svg width="21" height="21">
+                <use xlink:href="#icon-puzzle"></use>
+              </svg>
+              <span>5–8 чел</span>
+            </div>
+            <div class="quest-page__level">
+              <svg width="16" height="21">
+                <use xlink:href="#icon-person"></use>
+              </svg>
+              <span>высокая сложность</span>
+            </div>
+          </div>
+          <p class="quest-page__text">Вы стоите на пороге нового научного открытия, которое перевернет судьбу человечества. Но что-то идёт не так, и ядерный реактор, который работает на полную мощность, сигнализирует о скорой поломке. Удастя ли вам починить его в отведенное время и предотвратить гибель людей в этом фатальном эксперимете?</p>
+          <a class="quest-page__book" href="#">забронировать</a>
+        </div>
       </section>
-    
     </main>
-    <footer class="page-footer page-footer--catalog">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
         <ul class=" page-footer__social social">
           <li class="social__item social__item--instagram">

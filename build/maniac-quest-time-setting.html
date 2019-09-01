@@ -67,8 +67,8 @@
 </symbol></svg>
     </div>
     <div class="page-header__block ">
-      <header class="page-header  page-header--menu-closed ">
-        <div class="page-header__container page-header__container--catalog">
+      <header class="page-header page-header--menu-closed">
+        <div class="page-header__container">
           <div class="page-header__wrapper">
             <a class="page-header__logo-link" href="index.html">
               <picture>
@@ -78,6 +78,7 @@
             </a>
             <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
           </div>
+          <a class="page-header__back-link page-header__back-link--quest-page" href="maniac-quest.html"><span></span>описание</a>
           <div class="page-header__menu-wrapper">
             <nav class="main-nav">
               <ul class="main-nav__menu-list menu">
@@ -138,401 +139,125 @@
     </div>
     <main class="page-main">
       <h1 class="visually-hidden">Квесты Escape Room</h1>
-      <section class="quests">
-        <h2 class="quests__title">Квесты в Новосибирске</h2>
-          <p class="quests__text">Выберите тематику</p>
-          <form class="quests__form">
-            <ul class="quests__categories-list">
-              <li class="quests__categories-item">
-                <svg width="26" height="30">
-                  <use xlink:href="#icon-all-quests"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="all-quests" checked="">
-                <label class="quests__label" for="all-quests">Все квесты</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="36" height="30">
-                  <use xlink:href="#icon-adventures"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="adventures">
-                <label class="quests__label" for="adventures">Приключения</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="30" height="30">
-                  <use xlink:href="#icon-horror"></use>
-                </svg>
+      <section class="date-setting date-setting--maniac-quest">
+        <div class="date-setting__wrapper">
+          <div class="date-setting__title-container">
+            <h2 class="date-setting__quest-title">Маньяк</h2>
+            <div class="date-setting__setting">выбранный квест</div>
+          </div>
 
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="horror">
-                <label class="quests__label" for="horror">Ужасы</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="30" height="30">
-                  <use xlink:href="#icon-mysticism"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="mysticism">
-                <label class="quests__label" for="mysticism">Мистика</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="40" height="26">
-                  <use xlink:href="#icon-detective"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="detective">
-                <label class="quests__label" for="detective">Детектив</label>
-              </li>
-              <li class="quests__categories-item">
-                <svg width="28" height="30">
-                  <use xlink:href="#icon-scifi"></use>
-                </svg>
-                <input class="quests__input visually-hidden" type="radio" name="quests-type" value="all" id="sci-fi">
-                <label class="quests__label" for="sci-fi">Sci-fi</label>
-              </li>
-            </ul>
-          </form>
-          <ul class="quests__list">
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Склеп</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                  </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
-                </div>
-              </div></a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="maniac-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Маньяк</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>3-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="ritual-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Ритуал</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>3-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">История призраков</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Новослободская, 2а</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>5-6 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>легкий</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="old-house-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Тайны старого особняка</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-5 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>легкий</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Хижина в лесу</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>4-7 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
+          <div class="date-setting__details">Вы выбрали игру 22 марта в 16:00. К оплате 1500 рублей.</div>
 
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="experiment-quest.html">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Фатальный эксперимент</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>5-8 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Метро 2033</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Новослободская, 2а</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>6-8 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
+          <a class="date-setting__payment" href="#">Перейти к оплате<span></span></a>
 
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Старый чердкак</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Новослободская, 2а</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-3 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>легкий</span>
 
-                    </div>
-                  </div>
-                </div>
+          <div class="date-setting__time-choise">
+            <div class="date-setting__date-container">
+              <a class="date-setting__date-booking" href="#">Выберите дату<span></span></a>
+              <div class="date-setting__booked">22 марта</div>
+            </div>
+
+            <div class="time-setting">
+              <ul class="time-setting__description-list">
+                <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--transparent"></span><span class="visually-hidden">прозрачный</span> — сводобно</li>
+                <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--orange"></span><span class="visually-hidden">оранжевый</span> — занято</li>
+                <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--green"></span><span class="visually-hidden">зеленый</span> — выбрано вами</li>
+              </ul>
+
+              <form class="time-setting__form">
+                <ul class="time-setting__time-list">
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="9:45" id="9:45">
+                    <label class="time-setting__label" for="9:45">9:45</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="11:00" id="11:00">
+                    <label class="time-setting__label" for="11:00">11:00</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="12:15" id="12:15" disabled="">
+                    <label class="time-setting__label" for="12:15">12:15</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="13:30" id="13:30" disabled="">
+                    <label class="time-setting__label" for="13:30">13:30</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="14:45" id="14:45">
+                    <label class="time-setting__label" for="14:45">14:45</label>
+                    <span class="time-setting__price">1400 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="16:00" id="16:00" checked="">
+                    <label class="time-setting__label" for="16:00">16:00</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="17:15" id="17:15" disabled="">
+                    <label class="time-setting__label" for="17:15">17:15</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="18:30" id="18:30">
+                    <label class="time-setting__label" for="18:30">18:30</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="19:45" id="19:45">
+                    <label class="time-setting__label" for="19:45">19:45</label>
+                    <span class="time-setting__price">1500 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="21:00" id="21:00">
+                    <label class="time-setting__label" for="21:00">21:00</label>
+                    <span class="time-setting__price">1800 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="22:15" id="22:15" disabled="">
+                    <label class="time-setting__label" for="22:15">22:15</label>
+                    <span class="time-setting__price">1800 ₽</span>
+                  </li>
+                  <li class="time-setting__item">
+                    <input class="time-setting__input visually-hidden" type="radio" name="time-booking" value="11:00" id="11:00" disabled="">
+                    <label class="time-setting__label" for="11:00">23:30</label>
+                    <span class="time-setting__price">1800 ₽</span>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <ul class=" page-footer__social social">
+            <li class="social__item social__item--instagram">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в инстаграмме</span>
+                <svg width="28" height="28">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Последний рубеж</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>Верхнетецкая, 32</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>4-7 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>средний</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="quests__item theme">
-              <a class="theme__link" href="#">
-                <div class="theme__wrapper">
-                  <h3 class="theme__name">Марс-2056</h3>
-                  <div class="theme__address">
-                    <svg width="11" height="14">
-                      <use xlink:href="#icon-location-orange"></use>
-                    </svg>
-                    <span>пр. Ленина, 37</span>
-                  </div>
-                  <div class="theme__details">
-                    <div class="theme__guests-ammount">
-                      <svg width="11" height="14">
-                        <use xlink:href="#icon-person"></use>
-                      </svg>
-                      <span>2-4 чел</span>
-                    </div>
-                    <div class="theme__level">
-                      <svg width="14" height="14">
-                        <use xlink:href="#icon-puzzle"></use>
-                      </svg>
-                      <span>сложный</span>
-                    </div>
-                  </div>
-                </div>
+            <li class="social__item social__item--vk">
+              <a class="social__link" href="vk.com">
+                <span class="visually-hidden">Мы во вконтакте</span>
+                <svg width="22" height="12">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
               </a>
             </li>
           </ul>
-      </section>
-    
-    </main>
-    <footer class="page-footer page-footer--catalog">
-      <div class="page-footer__wrapper">
-        <ul class=" page-footer__social social">
-          <li class="social__item social__item--instagram">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Мы в инстаграмме</span>
-              <svg width="28" height="28">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--vk">
-            <a class="social__link" href="vk.com">
-              <span class="visually-hidden">Мы во вконтакте</span>
-              <svg width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
-      </div>
-    </footer>
+          <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
+        </div>
+      </footer>
+
     <section class="modal town town--hidden">
       <div class="town__header">
         <h2 class="town__title">Ваш город</h2>
@@ -565,7 +290,7 @@
       <form class="question__form form" action="https://escaperoom.ru" method="post">
         <fieldset class="form__item">
           <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Имя">
+          <input class="form__input" id="name" type="text" placeholder="Имя" minlength="3" required="">
         </fieldset>
         <fieldset class="form__item">
           <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
