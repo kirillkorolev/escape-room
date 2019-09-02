@@ -70,13 +70,17 @@
 }
 
 .theme {
-  width: 344px;
+  width: 31.8%;
   border-radius: 3px;
   background-repeat: no-repeat;
-  background-size: 100% 232px;
+  background-size: cover;
   position: relative;
   margin-bottom: 32px;
   justify-content: space-between;
+}
+
+.theme:nth-child(3n-1) {
+  margin: 0 24px 32px;
 }
 
 .theme:hover {
@@ -88,10 +92,10 @@
 }
 
 .theme__wrapper {
-  padding: 132px 90px 20px 15px;
+  padding: 37% 26% 6% 8%;
   background-image: linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%);
   background-size: 100% 160px;
-  background-position: 0 72px;
+  background-position: 0 bottom;
   background-repeat: no-repeat;
 }
 
@@ -195,8 +199,9 @@
 }
 
 .theme:nth-child(5) .theme__wrapper,
+.theme:nth-child(4) .theme__wrapper,
 .theme:nth-child(7) .theme__wrapper {
-  padding-top: 104px;
+  padding-top: 29%;
 }
 
 .theme__details {
@@ -214,7 +219,7 @@
     margin: 0 auto;
     margin-bottom: 16px;
     //flex-grow: -1;
-    height: 100%;
+    //height: 100%;
   }
 
   .theme__hit-wrapper {

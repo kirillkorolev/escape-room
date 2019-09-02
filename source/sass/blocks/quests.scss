@@ -19,14 +19,16 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  //justify-content: space-around;
 }
 
 .quests__categories-list {
   @include reset-list;
   margin-bottom: 39px;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .quests__categories-item {
@@ -105,11 +107,6 @@
   .quests__categories-item {
     padding: 1px 0;
     flex-shrink: 0;
-  }
-
-  .quests__categories-list {
-    flex-wrap: nowrap;
-    overflow: hidden;
   }
 
   .quests__categories-item:not(:first-child) {

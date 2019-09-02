@@ -1,5 +1,7 @@
 .menu {
   @include reset-list;
+  //width: 58.28%;
+  //width: 100%;
   width: 531px;
   display: flex;
   justify-content: space-between;
@@ -29,6 +31,9 @@
   }
 }
 
+.menu__item:not(:last-child) {
+  //margin-right: 9%;
+}
 
 @media (max-width: 767px) {
   .menu {
