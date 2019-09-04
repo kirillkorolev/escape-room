@@ -57,7 +57,7 @@
                   <svg width="16" height="21">
                     <use xlink:href="#icon-location"></use>
                   </svg>
-                  <div>Новосибирск</div>
+                  <span>Новосибирск</span>
                 </button>
               </div>
               <div class="contacts__item">
@@ -92,7 +92,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Квесты Escape Room</h1>
       <section class="quests">
-        <h2 class="quests__title">Квесты в Новосибирске</h2>
+        <h2 class="quests__title">квесты в Новосибирске</h2>
           <p class="quests__text">Выберите тематику</p>
           <form class="quests__form">
             <ul class="quests__categories-list">
@@ -164,13 +164,14 @@
                         <use xlink:href="#icon-puzzle"></use>
                       </svg>
                       <span>сложный</span>
+                    </div>
                   </div>
-                </div>
-                <div class="theme__hit">
-                  <svg width="12" height="12">
-                    <use xlink:href="#icon-star"></use>
-                  </svg>
-                  <span>Хит</span>
+                  <div class="theme__hit">
+                    <svg width="12" height="12">
+                      <use xlink:href="#icon-star"></use>
+                    </svg>
+                    <span>Хит</span>
+                  </div>
                 </div>
               </a>
             </li>
@@ -461,7 +462,7 @@
             </li>
           </ul>
       </section>
-    </div>
+
     </main>
     <footer class="page-footer page-footer--catalog">
       <div class="page-footer__wrapper">
@@ -493,12 +494,12 @@
           <span class="town__close-toggle"></span>
         </button>
       </div>
-      <a class="town__link" href="#">
+      <button class="town__link" type="button">
         <svg width="20" height="20">
           <use xlink:href="#icon-target"></use>
         </svg>
-        <div>Определить местоположение</div>
-      </a>
+        <span>Определить местоположение</span>
+      </button>
       <h2 class="town__list-title">... или выберите вручную</h2>
       <ul class="town__list">
         <li class="town__item town__item--current">Новосибирск</li>

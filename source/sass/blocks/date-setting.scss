@@ -73,7 +73,7 @@
   width: auto;
   margin: 0 auto;
   display: flex;
-  padding: 138px 10px 159px;
+  padding: 138px 10px 191px;
   flex-wrap: wrap;
   align-items: flex-end;
 }
@@ -85,15 +85,13 @@
 
 .date-setting__time-choise {
   border-top: 1px solid rgba(230, 230, 230, 0.65);
-  padding: 43px 47px 0;
+  padding: 26px 40px 0;
   margin-top: 16px;
   width: auto;
   max-width: 1080px;
 }
 
-
 .date-setting {
-  margin-top: -73px;
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -127,7 +125,7 @@
 
   .date-setting__wrapper {
     width: 100%;
-    padding: 138px 16px 93px;
+    padding: 38% 16px 26.9%;
   }
 
   .date-setting__date-booking {
@@ -135,9 +133,8 @@
   }
 
   .date-setting {
-    margin-top: -105px;
-
     background-image: url("../img/backgrounds/bg-quest-booking-filter@1x.png"), url("../img/backgrounds/bg-maniac-quest-booking-mobile@1x.png");
+    background-repeat: repeat-y, no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/backgrounds/bg-quest-booking-filter@2x.png"), url("../img/backgrounds/bg-maniac-quest-booking-mobile@2x.png");
@@ -151,7 +148,8 @@
   .date-setting__time-choise {
     order: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+    padding-top: 30px;
   }
 
   .date-setting__details {
@@ -168,5 +166,9 @@
     order: 2;
     text-align: left;
     margin-top: 24px;
+  }
+
+  .date-setting__date-container {
+    margin-bottom: 22px;
   }
 }

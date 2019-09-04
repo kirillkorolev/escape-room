@@ -2,6 +2,9 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .page-header {
@@ -31,7 +34,7 @@
 
 .page-header__menu-wrapper {
   width: 100%;
-  max-width: 66.69%;
+  max-width: 70.69%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -70,7 +73,7 @@
 
 @media (max-width: 767px) {
   .page-header__block {
-    width: auto;
+    width: 100%;
     max-width: 767px;
   }
 
@@ -263,7 +266,6 @@
         left: 0;
         background-image: linear-gradient(163.84deg, #633c0f -68.98%, #24150e 75.12%, #1a140d 132.97%);
         z-index: 5;
-        height: 100%;
         justify-content: flex-start;
       }
 
@@ -275,7 +277,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 16px;
+        padding: 0 16px 35px;
         order: 2;
         width: 100%;
       }
@@ -288,6 +290,10 @@
         border: none;
         background-color: transparent;
         outline: none;
+      }
+
+      .page-header__menu-wrapper {
+        max-width: 100%;
       }
 
       .page-header__question:hover {

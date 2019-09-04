@@ -1,7 +1,7 @@
 .time-setting__description-list {
   @include reset-list;
   display: flex;
-  margin-bottom: 49px;
+  margin-bottom: 43px;
 }
 
 .time-setting__color {
@@ -67,8 +67,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 32px;
-  margin-bottom: 32px;
+  margin-right: 24px;
+  margin-bottom: 27px;
 }
 
 .time-setting__input:checked + label {
@@ -88,5 +88,9 @@
 @media (max-width: 767px) {
   .time-setting__item {
     margin-right: 24px;
+  }
+
+  .time-setting__description-list {
+    margin-bottom: 49px;
   }
 }
