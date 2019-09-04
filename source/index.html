@@ -5,7 +5,6 @@
     <title>Escape Room</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font">
     <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font">
@@ -19,18 +18,18 @@
     <div style="display: none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-      <div class="page-header__block">
-        <header class="page-header page-header--menu-closed">
-          <div class="page-header__container">
-            <div class="page-header__wrapper">
-              <a class="page-header__logo-link">
-                <picture>
-                  <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
-                  <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
-                </picture>
-              </a>
-              <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
-            </div>
+    <div class="container">
+      <header class="page-header page-header--menu-closed">
+        <div class="page-header__container">
+          <div class="page-header__wrapper">
+            <a class="page-header__logo-link">
+              <picture>
+                <source media="(min-width: 361px)" srcset="img/logos/logo-desktop.svg">
+                <img class="page-header__logo-image" src="img/logos/logo-mobile.svg" alt="лого Escape room">
+              </picture>
+            </a>
+            <button class="page-header__toggle js-page-header-toggle" type="button" aria-label="close"><span>меню</span><span class="page-header__close-toggle"></span></button>
+          </div>
           <div class="page-header__menu-wrapper">
             <nav class="main-nav">
               <ul class="main-nav__menu-list menu">
@@ -86,45 +85,44 @@
               <button class="page-header__question js-question-mobile-link" type="button"><span>?&#160;</span>Задать вопрос</button>
             </div>
           </div>
-          </div>
-        </header>
-      </div>
-      <main class="page-main">
-        <h1 class="visually-hidden">Квесты Escape Room</h1>
-        <section class="promotion">
-          <div class="promotion__block">
-            <div class="promotion__container">
-              <h2 class="promotion__title">Лучшие квесты<br>в Новосибирске</h2>
-              <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
-              <a class="promotion__link" href="#">Выбрать квест</a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <ul class=" page-footer__social social">
-            <li class="social__item social__item--instagram">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в инстаграмме</span>
-                <svg width="28" height="28">
-                  <use xlink:href="#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--vk">
-              <a class="social__link" href="vk.com">
-                <span class="visually-hidden">Мы во вконтакте</span>
-                <svg width="22" height="12">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
         </div>
-      </footer>
-
+      </header>
+    </div>
+    <main class="page-main">
+      <h1 class="visually-hidden">Квесты Escape Room</h1>
+      <section class="promotion">
+        <div class="promotion__block">
+          <div class="promotion__container">
+            <h2 class="promotion__title">Лучшие квесты<br>в Новосибирске</h2>
+            <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
+            <a class="promotion__link" href="#">Выбрать квест</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <ul class=" page-footer__social social">
+          <li class="social__item social__item--instagram">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в инстаграмме</span>
+              <svg width="28" height="28">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="vk.com">
+              <span class="visually-hidden">Мы во вконтакте</span>
+              <svg width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
+      </div>
+    </footer>
     <section class="modal town town--hidden">
       <div class="town__header">
         <h2 class="town__title">Ваш город</h2>
@@ -155,13 +153,14 @@
         </button>
       </div>
       <form class="question__form form" action="https://escaperoom.ru" method="post">
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--name">
           <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Имя" minlength="3" required>
+          <input class="form__input js-input-name" id="name" type="text" placeholder="Имя" minlength="3" required>
         </fieldset>
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--email">
           <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
-          <input class="form__input" id="email" type="email" placeholder="E-mail">
+          <input class="form__input js-input-mail" id="email" type="email" placeholder="E-mail" required>
+          <div class="form__mail-error"></div>
         </fieldset>
         <fieldset class="form__item">
           <h3 class="form__textarea-title">Ваш вопрос:</h3>

@@ -84,3 +84,34 @@ var closePopupWithEsc = function (hiddenClass, visibleClass, popup) {
 
 closePopupWithEsc('town--hidden', 'town--visible', modalTown);
 closePopupWithEsc('question--hidden', 'question--visible', modalQuestion);
+
+blackout.addEventListener('click', function () {
+  blackout.classList.add('blackout--none');
+
+  if (modalTown.classList.contains('town--visible')) {
+    modalTown.classList.remove('town--visible');
+    modalTown.classList.add('town--hidden');
+  } else if (modalQuestion.classList.contains('question--visible')) {
+    modalQuestion.classList.remove('question--visible');
+    modalQuestion.classList.add('question--hidden');
+  }
+});
+
+var inputMail = modalQuestion.querySelector('.js-input-mail');
+var errorMail = modalQuestion.querySelector('.form__mail-error');
+
+inputMail.onblur = function () {
+  if (!inputMail.value.includes('@')) {
+    inputMail.classList.add('form__error');
+    errorMail.innerHTML = 'Введён некорректный e-mail, попробуйте заново';
+  } else {
+    inputMail.classList.add('form__valid');
+  }
+};
+
+inputMail.onfocus = function () {
+  if (this.classList.contains('form__error')) {
+    this.classList.remove('form__error');
+    errorMail.innerHTML = '';
+  }
+};

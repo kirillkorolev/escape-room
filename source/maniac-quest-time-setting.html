@@ -5,7 +5,6 @@
     <title>Escape Room</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font">
     <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font">
@@ -19,7 +18,7 @@
     <div style="display: none">
       <include src="build/img/sprite_auto.svg"></include>
     </div>
-    <div class="page-header__block ">
+    <div class="container">
       <header class="page-header page-header--menu-closed">
         <div class="page-header__container">
           <div class="page-header__wrapper">
@@ -98,25 +97,19 @@
             <h2 class="date-setting__quest-title">Маньяк</h2>
             <div class="date-setting__setting">выбранный квест</div>
           </div>
-
           <div class="date-setting__details">Вы выбрали игру 22 марта в 16:00. К оплате 1500 рублей.</div>
-
           <a class="date-setting__payment" href="#">Перейти к оплате<span></span></a>
-
-
           <div class="date-setting__time-choise">
             <div class="date-setting__date-container">
               <a class="date-setting__date-booking" href="#">Выберите дату<span></span></a>
               <div class="date-setting__booked">22 марта</div>
             </div>
-
             <div class="time-setting">
               <ul class="time-setting__description-list">
                 <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--transparent"></span><span class="visually-hidden">прозрачный</span> — сводобно</li>
                 <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--orange"></span><span class="visually-hidden">оранжевый</span> — занято</li>
                 <li class="time-setting__description-item"><span class="time-setting__color time-setting__color--green"></span><span class="visually-hidden">зеленый</span> — выбрано вами</li>
               </ul>
-
               <form class="time-setting__form">
                 <ul class="time-setting__time-list">
                   <li class="time-setting__item">
@@ -183,34 +176,32 @@
               </form>
             </div>
           </div>
-
         </div>
       </section>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <ul class=" page-footer__social social">
-            <li class="social__item social__item--instagram">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в инстаграмме</span>
-                <svg width="28" height="28">
-                  <use xlink:href="#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item social__item--vk">
-              <a class="social__link" href="vk.com">
-                <span class="visually-hidden">Мы во вконтакте</span>
-                <svg width="22" height="12">
-                  <use xlink:href="#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
-        </div>
-      </footer>
-
+      <div class="page-footer__wrapper">
+        <ul class=" page-footer__social social">
+          <li class="social__item social__item--instagram">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в инстаграмме</span>
+              <svg width="28" height="28">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="vk.com">
+              <span class="visually-hidden">Мы во вконтакте</span>
+              <svg width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="page-footer__question js-question-link" type="button"><span>?&#160;</span>Задать вопрос</button>
+      </div>
+    </footer>
     <section class="modal town town--hidden">
       <div class="town__header">
         <h2 class="town__title">Ваш город</h2>
