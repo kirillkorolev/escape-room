@@ -7,7 +7,8 @@
   flex-direction: column;
   margin-bottom: 32px;
 
-  &--email {
+  &--email,
+  &--name {
     position: relative;
   }
 }
@@ -86,11 +87,20 @@
   line-height: 16px;
   width: 219px;
   padding: 15px;
-  background-color: #b8b8b8;
+  background-color: $orange;
   border-radius: 47px;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-bottom: 24px;
+  border: none;
+}
+
+.form__send:hover {
+  background-color: $orange-hover;
+}
+
+.form__send:disabled {
+  background-color: #b8b8b8;
 }
 
 .form__confirmation {
@@ -152,6 +162,25 @@
 
 .form__vaild {
   border-color: rgba(34, 139, 34, 0.64);
+}
+
+.form__input-name-title,
+.form__input-email-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(230, 230, 230, 0.64);
+  position: absolute;
+  display: none;
+  top: 27px;
+  left: 24px;
+  padding: 0 3px;
+  background-image: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
+}
+
+.form__input-name-title--visible,
+.form__input-email-title--visible {
+  display: inline-block;
 }
 
 @media (max-width: 767px) {

@@ -4,7 +4,8 @@
   line-height: 92px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 80px;
+  margin-right: 77px;
+  letter-spacing: -0.03em;
 }
 
 .date-setting__setting {
@@ -45,6 +46,7 @@
 .date-setting__payment {
   width: 141px;
   margin-left: 0;
+  margin-bottom: 17px;
 }
 
 .date-setting__details {
@@ -52,7 +54,8 @@
   font-size: 15px;
   line-height: 22px;
   width: 162px;
-  margin-right: 80px;
+  margin-right: 99px;
+  margin-bottom: 12px;
 }
 
 .date-setting__date-booking:hover {
@@ -69,7 +72,7 @@
 }
 
 .date-setting__wrapper {
-  max-width: 1100px;
+  max-width: 1113px;
   width: auto;
   margin: 0 auto;
   display: flex;
@@ -85,7 +88,7 @@
 
 .date-setting__time-choise {
   border-top: 1px solid rgba(230, 230, 230, 0.65);
-  padding: 26px 40px 0;
+  padding: 25px 45px 0;
   margin-top: 16px;
   width: auto;
   max-width: 1080px;
@@ -114,13 +117,32 @@
 
 .date-setting__date-container {
   display: flex;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
+}
+
+.date-setting__quest-style {
+  display: none;
 }
 
 @media (max-width: 767px) {
+  .date-setting__setting {
+    display: none;
+  }
+
+  .date-setting__quest-style {
+    display: inline-block;
+    color: $orange;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    order: -1;
+    margin-bottom: 9px;
+  }
+
   .date-setting__quest-title {
     font-size: 42px;
     line-height: 46px;
+    letter-spacing: normal;
   }
 
   .date-setting__wrapper {
@@ -129,7 +151,7 @@
   }
 
   .date-setting__date-booking {
-    margin-left: 0;
+    margin-right: 18px;
   }
 
   .date-setting {
@@ -148,14 +170,14 @@
   .date-setting__time-choise {
     order: 0;
     padding: 0;
-    margin-bottom: 5px;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .date-setting__details {
     order: 1;
     margin-right: 0;
     width: 261px;
+    margin-bottom: 26px;
   }
 
   .time-setting__description-list {
@@ -165,10 +187,14 @@
   .date-setting__payment {
     order: 2;
     text-align: left;
-    margin-top: 24px;
+    margin-top: 0;
   }
 
   .date-setting__date-container {
     margin-bottom: 22px;
+  }
+
+  .date-setting__details br {
+    display: none;
   }
 }

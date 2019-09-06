@@ -3,8 +3,9 @@
   font-weight: 900;
   font-size: 92px;
   line-height: 87px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   text-transform: uppercase;
+  letter-spacing: -0.03em;
 }
 
 .quest-page__style {
@@ -13,7 +14,7 @@
   font-size: 14px;
   line-height: 20px;
   order: -1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .quest-page__properties {
@@ -22,7 +23,7 @@
   line-height: 20px;
   display: flex;
   margin-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 33px;
 }
 
 .quest-page__text {
@@ -31,8 +32,8 @@
   font-size: 15px;
   line-height: 22px;
   color: $gray;
-  margin-bottom: 40px;
-  padding: 0 128px 0 39px;
+  margin-bottom: 43px;
+  padding: 0 128px 0 32px;
 }
 
 .quest-page__book {
@@ -47,7 +48,8 @@
   padding: 22px 0;
   font-weight: 800;
   line-height: 20px;
-  margin-left: 42px;
+  margin-left: 35px;
+  letter-spacing: 0.03em;
 }
 
 .quest-page__book:hover {
@@ -62,7 +64,7 @@
 }
 
 .quest-page__length {
-  padding: 8px 24px 8px 0;
+  padding: 8px 29px 8px 0;
   border-right: 1px solid rgba(255, 255, 255, 0.36);
 }
 
@@ -84,23 +86,24 @@
 }
 
 .quest-page__level span {
-  padding-left: 14px;
+  padding-left: 9px;
 }
 
 .quest-page__container {
-  //padding: 180px 86px 177px 600px;
   min-width: 500px;
   max-width: 688px;
   padding: 150px 0 180px;
-  margin-right: 86px;
-  //margin-right: 86px;
-  //margin-left: 600px;
+  margin-right: 78px;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .quest-page__back-link {
+  display: none;
+}
+
+.quest-page__level br {
   display: none;
 }
 
@@ -130,6 +133,10 @@
 
     .quest-page__container {
       padding: 139px 0 77px;
+    }
+
+    .quest-page__container .quest-page__style {
+      margin-bottom: 23px;
     }
   }
 
@@ -163,7 +170,8 @@
     font-size: 42px;
     line-height: 46px;
     padding: 0 16px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+    letter-spacing: normal;
   }
 
   .quest-page__style {
@@ -179,17 +187,24 @@
     border: none;
   }
 
-  .quest-page__level span,
   .quest-page__guests-ammount span {
     padding-left: 0;
-    padding-top: 10px;
+    padding-top: 8px;
   }
 
   .quest-page__length span {
     padding-left: 0;
-    padding-top: 6px;
+    padding-top: 7px;
   }
 
+  .quest-page__level span {
+    padding-left: 0;
+    padding-top: 4px;
+  }
+
+  .quest-page__level br {
+    display: inline;
+  }
 
   .quest-page__guests-ammount {
     border-left: 1px solid rgba(255, 255, 255, 0.36);
@@ -218,7 +233,11 @@
 
   .quest-page__text {
     padding: 0 16px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
+  }
+
+  .quest-page__text br {
+    display: none;
   }
 
   .quest-page__book {
@@ -227,7 +246,7 @@
 
   .quest-page__properties {
     padding-left: 0;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
   }
 
   .quest-page {
@@ -241,7 +260,7 @@
       }
 
       .quest-page__container {
-        padding: 110% 0 16%;
+        padding: 111% 0 16%;
       }
     }
 
@@ -265,7 +284,7 @@
       }
 
       .quest-page__container {
-        padding: 91% 0 14.7%;
+        padding: 110% 0 14.7%;
       }
     }
 

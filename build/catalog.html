@@ -12,7 +12,7 @@
     <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font">
     <link rel="preload" href="fonts/Raleway-SemiBold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="./js/picturefill.min.js" async=""></script>
+    <script src="./js/plugins/picturefill.min.js" async=""></script>
   </head>
   <body>
     <div style="display: none">
@@ -561,22 +561,25 @@
         </button>
       </div>
       <form class="question__form form" action="https://escaperoom.ru" method="post">
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--name">
+          <div class="form__input-name-title">Имя</div>
           <label class="form__label" for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-          <input class="form__input" id="name" type="text" placeholder="Имя">
+          <input class="form__input js-input-name" id="name" type="text" placeholder="Имя" minlength="3" required="">
         </fieldset>
-        <fieldset class="form__item">
+        <fieldset class="form__item form__item--email">
+          <div class="form__input-email-title">E-mail</div>
           <label class="form__label" for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
-          <input class="form__input" id="email" type="email" placeholder="E-mail">
+          <input class="form__input js-input-mail" id="email" type="email" placeholder="E-mail" required="">
+          <div class="form__mail-error"></div>
         </fieldset>
         <fieldset class="form__item">
           <h3 class="form__textarea-title">Ваш вопрос:</h3>
           <textarea id="question-text" name="question" rows="4" placeholder="Начните вводить ..."></textarea>
         </fieldset>
-        <button class="form__send" type="submit">Отправить вопрос</button>
+        <button class="form__send js-form-send" type="submit" disabled="">Отправить вопрос</button>
         <div class="form__confirmation">
           <div class="form__checkbox-wrapper">
-            <input class="visually-hidden form__checkbox" type="checkbox" name="confirmation" id="confirmation-field">
+            <input class="visually-hidden form__checkbox js-form-checkbox" type="checkbox" name="confirmation" id="confirmation-field">
             <label class="form__checkbox-label" for="confirmation-field"><span class="visually-hidden">Согласен</span></label>
           </div>
           <div class="form__confirmation-text">Я согласен с&#160;<a class="form__agreement" href="#">правилами обработки персональных данных </a>и пользовательским соглашением</div>

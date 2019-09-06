@@ -9,7 +9,7 @@
   font-size: 64px;
   line-height: 70px;
   font-weight: 800;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
 }
 
 .promotion__text {
@@ -33,7 +33,6 @@
 
 .promotion__container {
   max-width: 600px;
-  //padding: 200px 308px 152px 136px;
   z-index: 10;
   padding-top: 190px;
   padding-bottom: 176px;
@@ -53,6 +52,7 @@
   background-color: $orange;
   text-align: center;
   border-radius: 48px;
+  letter-spacing: 0.03em;
 }
 
 .promotion__link:hover {

@@ -1,7 +1,5 @@
 .menu {
   @include reset-list;
-  //width: 58.28%;
-  //width: 100%;
   width: 531px;
   display: flex;
   justify-content: space-between;
@@ -14,6 +12,7 @@
   line-height: 16px;
   font-weight: 600;
   color: $light-gray;
+  letter-spacing: 0.03em;
 }
 
 .menu__link[href]:hover {
@@ -31,20 +30,16 @@
   }
 }
 
-.menu__item:not(:last-child) {
-  //margin-right: 9%;
-}
-
 @media (max-width: 767px) {
   .menu {
     flex-direction: column;
-    margin-bottom: 80px;
+    margin-bottom: 74px;
     width: auto;
   }
 
   .menu__item {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
   }
 
   .menu__link {

@@ -97,10 +97,15 @@ blackout.addEventListener('click', function () {
   }
 });
 
+var inputName = modalQuestion.querySelector('.js-input-name');
 var inputMail = modalQuestion.querySelector('.js-input-mail');
 var errorMail = modalQuestion.querySelector('.form__mail-error');
 
+var nameInputTitle = modalQuestion.querySelector('.form__input-name-title');
+var emailInputTitle = modalQuestion.querySelector('.form__input-email-title');
+
 inputMail.onblur = function () {
+  emailInputTitle.classList.add('form__input-name-title--visible');
   if (!inputMail.value.includes('@')) {
     inputMail.classList.add('form__error');
     errorMail.innerHTML = 'Введён некорректный e-mail, попробуйте заново';
@@ -113,5 +118,21 @@ inputMail.onfocus = function () {
   if (this.classList.contains('form__error')) {
     this.classList.remove('form__error');
     errorMail.innerHTML = '';
+    emailInputTitle.classList.remove('form__input-name-title--visible');
   }
 };
+
+inputName.onblur = function () {
+  nameInputTitle.classList.add('form__input-name-title--visible');
+};
+
+var checkboxForm = modalQuestion.querySelector('.js-form-checkbox');
+var sendButton = modalQuestion.querySelector('.js-form-send');
+
+checkboxForm.addEventListener('change', function () {
+  if (checkboxForm.checked) {
+    sendButton.removeAttribute('disabled');
+  } else {
+    sendButton.setAttribute('disabled');
+  }
+});

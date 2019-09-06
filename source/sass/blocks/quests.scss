@@ -4,7 +4,7 @@
   line-height: 20px;
   color: $orange;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .quests__text {
@@ -19,14 +19,12 @@
   @include reset-list;
   display: flex;
   flex-wrap: wrap;
-  //justify-content: space-around;
 }
 
 .quests__categories-list {
   @include reset-list;
   margin-bottom: 39px;
   display: flex;
-  //flex-wrap: wrap;
   overflow: hidden;
   overflow-x: scroll;
 }
@@ -43,7 +41,7 @@
 
 .quests__categories-item:not(:last-child) {
   border-right: 1px solid rgba(255, 255, 255, 0.22);
-  padding-right: 31px;
+  padding-right: 39px;
 }
 
 .quests__categories-item:nth-child(3) {
@@ -64,11 +62,12 @@
   font-weight: 700;
   cursor: pointer;
   margin-left: 12px;
+  letter-spacing: -0.02em;
 }
 
 .quests {
   width: auto;
-  max-width: 1080px;
+  max-width: 1095px;
   margin: 0 auto;
   padding-top: 122px;
 }

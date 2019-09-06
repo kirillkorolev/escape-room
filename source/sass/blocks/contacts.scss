@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 266px;
+  width: 264px;
   flex-wrap: wrap;
 }
 
@@ -12,6 +12,7 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .contacts__phone:hover {
@@ -32,7 +33,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
-
+  letter-spacing: 0.02em;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -52,7 +53,7 @@
 @media (max-width: 767px) {
   .contacts {
     flex-direction: column;
-    padding: 30px 16px 40px;
+    padding: 40px 16px 37px;
     width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
@@ -60,6 +61,6 @@
   }
 
   .contacts__town-link {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
