@@ -15,13 +15,13 @@
   font-weight: 800;
   font-size: 32px;
   line-height: 38px;
-  margin-bottom: 28px;
 }
 
 .town__header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .town__link {
@@ -29,7 +29,7 @@
   color: $gray;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   padding: 0;
   background-color: transparent;
@@ -65,7 +65,7 @@
   line-height: 27px;
   color: $gray;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   font-weight: 500;
 }
 
@@ -73,7 +73,7 @@
   @include reset-list;
 }
 
-.town__item {
+.town__item-link {
   color: white;
   opacity: 0.32;
   font-size: 24px;
@@ -88,11 +88,21 @@
   }
 }
 
+.town__item {
+  &--current .town__item-link {
+    opacity: 1;
+
+    text-decoration: underline;
+    text-decoration-color: $orange;
+    cursor: default;
+  }
+}
+
 .town__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.town__item:hover {
+.town__item-link:hover {
   opacity: 1;
 }
 
@@ -107,6 +117,7 @@
   margin-top: 5px;
   outline: none;
 }
+
 
 .town__close-toggle {
   display: block;
@@ -131,6 +142,18 @@
 
 .town__close-toggle::after {
   transform: rotate(-45deg);
+}
+
+.town__toggle:hover .town__close-toggle::before,
+.town__toggle:hover .town__close-toggle::after {
+  background-color: $orange-hover;
+  opacity: 1;
+}
+
+.town__toggle:active .town__close-toggle::before,
+.town__toggle:active .town__close-toggle::after {
+  background-color: $orange-hover;
+  opacity: 0.5;
 }
 
 @media (max-width: 767px) {

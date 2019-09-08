@@ -2,7 +2,6 @@
   @include reset-list;
   width: 531px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -30,10 +29,14 @@
   }
 }
 
+.menu__item:not(:last-child) {
+  margin-right: 9.1%;
+}
+
 @media (max-width: 767px) {
   .menu {
     flex-direction: column;
-    margin-bottom: 74px;
+    margin-bottom: 73px;
     width: auto;
   }
 
@@ -45,5 +48,9 @@
   .menu__link {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 0;
   }
 }

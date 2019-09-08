@@ -15,6 +15,10 @@
   letter-spacing: 0.03em;
 }
 
+.contacts__item:nth-of-type(2) {
+  margin-bottom: 3px;
+}
+
 .contacts__phone:hover {
   color: $orange-hover;
   border-bottom: 1px dashed $orange-hover;
@@ -38,6 +42,7 @@
   background-color: transparent;
   padding: 0;
   outline: none;
+  cursor: pointer;
 }
 
 .contacts__town-link span {
@@ -53,14 +58,20 @@
 @media (max-width: 767px) {
   .contacts {
     flex-direction: column;
-    padding: 40px 16px 37px;
-    width: 100%;
-    margin: 0 auto;
+    padding: 40px 0 37px;
+    width: auto;
+    min-width: 328px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     order: 0;
+
+    margin: 0 16px;
   }
 
   .contacts__town-link {
     margin-bottom: 15px;
+  }
+
+  .contacts__item:nth-of-type(2) {
+    margin-bottom: 0;
   }
 }

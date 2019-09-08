@@ -3,20 +3,24 @@
   line-height: 29px;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   color: $white;
 }
 
 .theme__hit {
   width: 67px;
-  padding: 3px 17px 4px 16px;
+  padding: 3px 17px 4px 12px;
   border-radius: 25px;
   border: 2px solid rgba(242, 137, 15, 0.74);
   position: absolute;
-  top: 14px;
-  right: 15px;
+  top: 16px;
+  right: 16px;
   display: flex;
   align-items: center;
+}
+
+.theme__hit svg {
+  margin-right: 4px;
 }
 
 .theme__hit span {
@@ -26,6 +30,13 @@
   color: $gray;
 }
 
+.theme__hit svg,
+.theme__address svg,
+.theme__guests-ammount svg,
+.theme__level svg {
+  flex-shrink: 0;
+}
+
 
 .theme__address,
 .theme__guests-ammount,
@@ -33,7 +44,7 @@
   font-size: 13px;
   line-height: 19px;
   font-weight: 500;
-  color: $gray;
+  color: rgba(230, 230, 230, 0.8);
   position: relative;
 }
 
@@ -41,11 +52,12 @@
   font-style: normal;
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
+  margin-left: 4px;
 }
 
 .theme__address span {
-  margin-left: 13px;
+  margin-left: 6px;
 }
 
 .theme__guests-ammount span {
@@ -57,14 +69,14 @@
 }
 
 .theme__guests-ammount {
-  padding: 0 18px 0 0;
+  padding: 0 12px 0 0;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
 }
 
 .theme__level {
-  padding-left: 13px;
+  padding-left: 12px;
   display: flex;
   align-items: center;
 }
@@ -72,15 +84,13 @@
 .theme {
   width: 31.5%;
   border-radius: 3px;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   margin-bottom: 32px;
-  justify-content: space-between;
+  margin-right: 2.22%;
 }
 
-.theme:nth-child(3n-1) {
-  margin: 0 24px 32px;
+.theme:nth-child(3n) {
+  margin-right: 0;
 }
 
 .theme:hover {
@@ -92,110 +102,12 @@
 }
 
 .theme__wrapper {
-  padding: 37% 26% 6% 5%;
+  padding: 37.4% 26% 6% 5.5%;
   background-image: linear-gradient(0.17deg, rgba(28, 27, 27, 0.9) 5.23%, rgba(46, 46, 46, 0) 98.38%);
   background-size: 100% 160px;
   background-position: 0 bottom;
   background-repeat: no-repeat;
-}
-
-.theme:first-child {
-  background-image: url("../img/backgrounds/bg-theme-1@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-1@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(2) {
-  background-image: url("../img/backgrounds/bg-theme-2@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-2@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(3) {
-  background-image: url("../img/backgrounds/bg-theme-3@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-3@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(4) {
-  background-image: url("../img/backgrounds/bg-theme-4@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-4@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(5) {
-  background-image: url("../img/backgrounds/bg-theme-5@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-5@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(6) {
-  background-image: url("../img/backgrounds/bg-theme-6@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-6@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(7) {
-  background-image: url("../img/backgrounds/bg-theme-7@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-7@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(8) {
-  background-image: url("../img/backgrounds/bg-theme-8@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-8@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(9) {
-  background-image: url("../img/backgrounds/bg-theme-9@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-9@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(10) {
-  background-image: url("../img/backgrounds/bg-theme-10@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-10@2x.jpg");
-    background-size: 100% auto;
-  }
-}
-
-.theme:nth-child(11) {
-  background-image: url("../img/backgrounds/bg-theme-11@1x.jpg");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("..//img/backgrounds/bg-theme-11@2x.jpg");
-    background-size: 100% auto;
-  }
+  height: 100%;
 }
 
 .theme:nth-child(5) .theme__wrapper,
@@ -205,6 +117,7 @@
 
 .theme__details {
   display: flex;
+  margin-left: 4px;
 }
 
 @media (max-width: 767px) {
@@ -214,26 +127,27 @@
   }
 
   .theme__wrapper {
-    padding: 40% 26% 6% 6%;
+    padding: 39.2% 26% 6% 6%;
   }
 
   .theme {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 16px;
-    //flex-grow: -1;
-    //height: 100%;
+    z-index: -1;
   }
 
   .theme__hit-wrapper {
     right: 16px;
   }
 
+
   .theme__hit {
     padding-top: 3px;
-    padding-bottom: 3px;
-    top: 15px;
-    right: 14px;
+    padding-bottom: 4px;
+    right: 13px;
+    font-size: 12px;
+    line-height: 17px;
   }
 
   .theme__hit::before {
@@ -241,7 +155,12 @@
   }
 
   .theme__name {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
+  }
+
+  .theme__address,
+  .theme__details {
+    margin-left: 0;
   }
 
   .theme__address span {
@@ -250,5 +169,9 @@
 
   .theme__guests-ammount {
     padding-right: 14px;
+  }
+
+  .theme__level {
+    padding-left: 13px;
   }
 }

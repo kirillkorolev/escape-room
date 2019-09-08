@@ -10,13 +10,14 @@
   line-height: 70px;
   font-weight: 800;
   margin-bottom: 31px;
+  max-width: 521px;
 }
 
 .promotion__text {
   font-weight: 500;
   color: $gray;
   margin-top: 0;
-  margin-bottom: 69px;
+  margin-bottom: 68px;
   max-width: 476px;
 }
 
@@ -25,6 +26,7 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
+  height: 100vh;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("..//img/backgrounds/bg-desktop@2x.jpg");
@@ -34,8 +36,7 @@
 .promotion__container {
   max-width: 600px;
   z-index: 10;
-  padding-top: 190px;
-  padding-bottom: 176px;
+  padding: 188px 0 176px;
   margin-left: 136px;
 }
 
@@ -63,7 +64,7 @@
   .promotion__title {
     font-size: 36px;
     line-height: 40px;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   .promotion__link {
@@ -74,6 +75,7 @@
   }
 
   .promotion {
+    max-height: 100vh;
     background-image: url("../img/backgrounds/bg-mobile-filter@1x.png"), url("..//img/backgrounds/bg-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -87,8 +89,12 @@
   }
 
   .promotion__container {
-    padding: 115.8% 16px 17.78%;
+    padding: 115.5% 7.5% 17.78%;
     text-align: center;
     margin-left: 0;
+  }
+
+  .promotion__block {
+    height: 100vh;
   }
 }

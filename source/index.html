@@ -93,8 +93,8 @@
       <section class="promotion">
         <div class="promotion__block">
           <div class="promotion__container">
-            <h2 class="promotion__title">Лучшие квесты<br>в Новосибирске</h2>
-            <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
+            <h2 class="promotion__title">Лучшие квесты в Новосибирске</h2>
+            <p class="promotion__text">Надоело проводить свободное время лёжа на диване? Игровые площадки questroom на целый час погружают вас&#8194;в мир незабываемых авантюр. Ищите подсказки, решайте головоломки и находите выход из комнаты!</p>
             <a class="promotion__link" href="#">Выбрать квест</a>
           </div>
         </div>
@@ -125,7 +125,7 @@
     </footer>
     <section class="modal town town--hidden">
       <div class="town__header">
-        <h2 class="town__title">Ваш город</h2>
+        <h2 class="town__title">Ваш город:</h2>
         <button class="town__toggle js-town-close-toggle" type="button" aria-label="close">
           <span class="town__close-toggle"></span>
         </button>
@@ -138,11 +138,21 @@
       </button>
       <h2 class="town__list-title">... или выберите вручную</h2>
       <ul class="town__list">
-        <li class="town__item town__item--current">Новосибирск</li>
-        <li class="town__item">Иркутск</li>
-        <li class="town__item">Смоленск</li>
-        <li class="town__item">Волгоград</li>
-        <li class="town__item">Комсомольск-на-Амуре</li>
+        <li class="town__item town__item--current">
+          <a class="town__item-link" href="#">Новосибирск</a>
+        </li>
+        <li class="town__item">
+          <a class="town__item-link" href="#">Иркутск</a>
+        </li>
+        <li class="town__item">
+          <a class="town__item-link" href="#">Смоленск</a>
+        </li>
+        <li class="town__item">
+          <a class="town__item-link" href="#">Волгоград</a>
+        </li>
+        <li class="town__item">
+          <a class="town__item-link" href="#">Комсомольск-на-Амуре</a>
+        </li>
       </ul>
     </section>
     <section class="modal question question--hidden">
@@ -166,7 +176,7 @@
         </fieldset>
         <fieldset class="form__item">
           <h3 class="form__textarea-title">Ваш вопрос:</h3>
-          <textarea id="question-text" name="question" rows="4" placeholder="Начните вводить ..."></textarea>
+          <textarea id="question-text" name="question" rows="5" placeholder="Начните вводить ..."></textarea>
         </fieldset>
         <button class="form__send js-form-send" type="submit" disabled>Отправить вопрос</button>
         <div class="form__confirmation">
