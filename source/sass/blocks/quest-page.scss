@@ -94,6 +94,7 @@
   max-width: 688px;
   padding: 150px 0 180px;
   margin-right: 78px;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -105,6 +106,12 @@
 
 .quest-page__level br {
   display: none;
+}
+
+.quest-page__wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .quest-page {
