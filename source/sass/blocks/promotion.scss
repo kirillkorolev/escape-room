@@ -26,7 +26,6 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
-  height: 100vh;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("..//img/backgrounds/bg-desktop@2x.jpg");
@@ -38,6 +37,7 @@
   z-index: 10;
   padding: 188px 0 176px;
   margin-left: 136px;
+  height: 100vh;
 }
 
 .promotion__link {
@@ -75,12 +75,12 @@
   }
 
   .promotion {
-    max-height: 100vh;
+    height: 100vh;
     background-image: url("../img/backgrounds/bg-mobile-filter@1x.png"), url("..//img/backgrounds/bg-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/backgrounds/bg-mobile-filter@2x.png"), url("..//img/backgrounds/bg-mobile@2x.jpg");
-      background-size: 100% auto;
+      background-size: cover;
     }
   }
 

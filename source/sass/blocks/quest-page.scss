@@ -115,6 +115,7 @@
 }
 
 .quest-page {
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -139,7 +140,7 @@
     }
 
     .quest-page__container {
-      padding: 139px 0 77px;
+      padding: 10.17% 0 77px;
     }
 
     .quest-page__container .quest-page__style {
@@ -155,7 +156,15 @@
     }
 
     .quest-page__container {
-      padding: 158px 0 187px;
+      padding: 11.56% 0 187px;
+    }
+
+    .quest-page__style {
+      margin-bottom: 23px;
+    }
+
+    .quest-page__title {
+      margin-bottom: 17px;
     }
   }
 
@@ -167,7 +176,24 @@
     }
 
     .quest-page__container {
-      padding: 139px 0 122px;
+      padding: 10.17% 0 122px;
+    }
+
+    .quest-page__style {
+      margin-bottom: 23px;
+    }
+
+    .quest-page__properties {
+      padding-left: 40px;
+      margin-bottom: 17px;
+    }
+
+    .quest-page__title {
+      margin-bottom: 18px;
+    }
+
+    .quest-page__text {
+      padding-left: 43px;
     }
   }
 }
@@ -279,7 +305,7 @@
       }
 
       .quest-page__container {
-        padding: 80% 0 14.7%;
+        padding: 130% 0 14.7%;
       }
     }
 
@@ -291,7 +317,15 @@
       }
 
       .quest-page__container {
-        padding: 110% 0 14.7%;
+        padding: 177% 0 14.7%;
+      }
+
+      .quest-page__style {
+        margin-bottom: 8px;
+      }
+
+      .quest-page__title {
+        margin-bottom: 18px;
       }
     }
 
@@ -303,7 +337,24 @@
       }
 
       .quest-page__container {
-        padding: 103% 0 14.7%;
+        padding: 102.5% 0 14.7%;
+      }
+
+      .quest-page__style {
+        margin-bottom: 11px;
+      }
+
+      .quest-page__properties {
+        padding-left: 0;
+        margin-bottom: 17px;
+      }
+
+      .quest-page__title {
+        margin-bottom: 18px;
+      }
+
+      .quest-page__text {
+        padding-left: 16px;
       }
     }
   }
