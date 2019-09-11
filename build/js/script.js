@@ -108,7 +108,12 @@
 
   inputMail.onblur = function () {
     emailInputTitle.classList.add('form__input-name-title--visible');
-    if (!inputMail.value.includes('@')) {
+
+    var regEx =
+      '/^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/';
+    var validEmail = regEx.test(inputMail);
+
+    if (!validEmail) {
       inputMail.classList.add('form__error');
       errorMail.innerHTML = 'Введён некорректный e-mail, попробуйте заново';
     } else {
