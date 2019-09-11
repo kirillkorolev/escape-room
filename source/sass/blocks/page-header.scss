@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   width: auto;
+  max-width: 1290px;
   justify-content: space-between;
 
   &--catalog {
@@ -22,6 +23,7 @@
 
 .page-header__menu-wrapper {
   width: 100%;
+  min-width: 540px;
   max-width: 70.47%;
   display: flex;
   justify-content: space-between;
