@@ -58,11 +58,16 @@
   vertical-align: top;
   width: 110px;
   padding: 6px;
-  border: 2px solid $white;
+  border: 2px solid #c4c4c4;
   border-radius: 65px;
   cursor: pointer;
   letter-spacing: 0.05em;
   margin-bottom: 3px;
+  z-index: 0;
+}
+
+.time-setting__label:hover {
+  border-color: $orange-hover;
 }
 
 .time-setting__item {
@@ -85,6 +90,7 @@
   background-repeat: no-repeat;
   border: none;
   padding: 8px;
+  cursor: default;
 }
 
 .time-setting__price {
@@ -99,10 +105,15 @@
   }
 
   .time-setting__description-list {
-    margin-bottom: 49px;
+    margin-bottom: 39px;
+  }
+
+  .time-setting__description-item {
+    margin-bottom: 10px;
   }
 
   .time-setting__description-item:not(:last-child) {
     margin-right: 27px;
+    margin-bottom: 10px;
   }
 }

@@ -27,9 +27,10 @@
     }
   });
 
-  var openPopup = function (hiddenClass, visibleClass, openButton, popup) {
+  var openPopup = function (hiddenClass, visibleClass, openButton, popup, closingPopup, closingPopupclass) {
     if (openButton) {
       openButton.addEventListener('click', function (evt) {
+        closingPopup.classList.add(closingPopupclass);
         evt.preventDefault();
         popup.classList.remove(hiddenClass);
         popup.classList.add(visibleClass);
@@ -48,19 +49,24 @@
     }
   };
 
-  openPopup('town--hidden', 'town--visible', townOpenButton, modalTown);
+  openPopup('town--hidden', 'town--visible', townOpenButton, modalTown, modalQuestion, 'question--hidden');
+
   openPopup(
       'question--hidden',
       'question--visible',
       questionOpenButton,
-      modalQuestion
+      modalQuestion,
+      modalTown,
+      'town--hidden'
   );
 
   openPopup(
       'question--hidden',
       'question--visible',
       questionOpenButtonMobile,
-      modalQuestion
+      modalQuestion,
+      modalTown,
+      'town--hidden'
   );
 
   closePopup('town--hidden', 'town--visible', townCloseButton, modalTown);

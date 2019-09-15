@@ -61,6 +61,19 @@
   transform: rotate(-45deg);
 }
 
+.question__toggle:hover .question__close-toggle::before,
+.question__toggle:hover .question__close-toggle::after {
+  background-color: $orange-hover;
+  opacity: 1;
+}
+
+.question__toggle:active .question__close-toggle::before,
+.question__toggle:active .question__close-toggle::after {
+  background-color: $orange-hover;
+  opacity: 0.5;
+}
+
+
 @media (max-width: 767px) {
   .question {
     padding: 8.88% 4.44% 13.03%;
