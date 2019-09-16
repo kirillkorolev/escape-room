@@ -16,7 +16,7 @@ body {
   font-family: "Raleway", "Arial", sans-serif;
   color: $white;
   background-color: $black;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 a {
@@ -41,4 +41,13 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.body-popup-opened {
+  padding-left: 17px;
+}
+
+.html-popup-opened {
+  overflow: hidden;
+  touch-action: none;
 }

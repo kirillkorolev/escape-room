@@ -17,6 +17,9 @@
       '.js-question-mobile-link'
   );
 
+  var htmlGlobal = document.getElementsByTagName('html')[0];
+  var bodyGlobal = document.getElementsByTagName('body')[0];
+
   headerToggle.addEventListener('click', function () {
     if (pageHeader.classList.contains('page-header--menu-closed')) {
       pageHeader.classList.remove('page-header--menu-closed');
@@ -27,14 +30,21 @@
     }
   });
 
-  var openPopup = function (hiddenClass, visibleClass, openButton, popup, closingPopup, closingPopupclass) {
+  var openPopup = function (hiddenClass, visibleClass, openButton, popup) {
     if (openButton) {
       openButton.addEventListener('click', function (evt) {
-        closingPopup.classList.add(closingPopupclass);
         evt.preventDefault();
         popup.classList.remove(hiddenClass);
         popup.classList.add(visibleClass);
         blackout.classList.remove('blackout--none');
+
+        htmlGlobal.classList.add('html-popup-opened');
+        bodyGlobal.classList.add('body-popup-opened');
+
+        if (pageHeader.classList.contains('page-header--menu-opened')) {
+          pageHeader.classList.remove('page-header--menu-opened');
+          pageHeader.classList.add('page-header--menu-closed');
+        }
       });
     }
   };
@@ -45,28 +55,26 @@
         popup.classList.remove(visibleClass);
         popup.classList.add(hiddenClass);
         blackout.classList.add('blackout--none');
+        htmlGlobal.classList.remove('html-popup-opened');
+        bodyGlobal.classList.remove('body-popup-opened');
       });
     }
   };
 
-  openPopup('town--hidden', 'town--visible', townOpenButton, modalTown, modalQuestion, 'question--hidden');
+  openPopup('town--hidden', 'town--visible', townOpenButton, modalTown);
 
   openPopup(
       'question--hidden',
       'question--visible',
       questionOpenButton,
-      modalQuestion,
-      modalTown,
-      'town--hidden'
+      modalQuestion
   );
 
   openPopup(
       'question--hidden',
       'question--visible',
       questionOpenButtonMobile,
-      modalQuestion,
-      modalTown,
-      'town--hidden'
+      modalQuestion
   );
 
   closePopup('town--hidden', 'town--visible', townCloseButton, modalTown);
