@@ -26,7 +26,6 @@
   line-height: 22px;
   display: flex;
   align-items: center;
-  width: 122px;
   padding-bottom: 4px;
   border-bottom: 2px solid $orange;
 }
@@ -40,12 +39,13 @@
 }
 
 .date-setting__date-booking {
+  width: 123px;
   margin-right: 24px;
   z-index: 1;
 }
 
 .date-setting__payment {
-  width: 142px;
+  width: 143px;
   margin-left: 0;
   margin-bottom: 17px;
 }

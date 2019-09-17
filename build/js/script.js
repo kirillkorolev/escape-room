@@ -38,8 +38,9 @@
         popup.classList.add(visibleClass);
         blackout.classList.remove('blackout--none');
 
-        htmlGlobal.classList.add('html-popup-opened');
-        bodyGlobal.classList.add('body-popup-opened');
+        htmlGlobal.setAttribute('padding-left', '17px');
+        bodyGlobal.setAttribute('overflow', 'hidden');
+        bodyGlobal.setAttribute('touch-action', 'none');
 
         if (pageHeader.classList.contains('page-header--menu-opened')) {
           pageHeader.classList.remove('page-header--menu-opened');
@@ -55,8 +56,9 @@
         popup.classList.remove(visibleClass);
         popup.classList.add(hiddenClass);
         blackout.classList.add('blackout--none');
-        htmlGlobal.classList.remove('html-popup-opened');
-        bodyGlobal.classList.remove('body-popup-opened');
+        htmlGlobal.removeAttribute('padding-left');
+        bodyGlobal.removeAttribute('overflow');
+        bodyGlobal.removeAttribute('touch-action');
       });
     }
   };

@@ -64,6 +64,7 @@
   max-width: 1135px;
   margin: 0 auto;
   padding: 120px 20px 0;
+  overflow-x: hidden;
 }
 
 .quests__input:checked + label span {
