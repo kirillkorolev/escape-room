@@ -17,8 +17,8 @@
       '.js-question-mobile-link'
   );
 
-  var htmlGlobal = document.getElementsByTagName('html')[0];
-  var bodyGlobal = document.getElementsByTagName('body')[0];
+  var htmlGlobal = document.querySelector('html');
+  var bodyGlobal = document.querySelector('body');
 
   headerToggle.addEventListener('click', function () {
     if (pageHeader.classList.contains('page-header--menu-closed')) {
@@ -38,9 +38,9 @@
         popup.classList.add(visibleClass);
         blackout.classList.remove('blackout--none');
 
-        htmlGlobal.setAttribute('padding-left', '17px');
-        bodyGlobal.setAttribute('overflow', 'hidden');
-        bodyGlobal.setAttribute('touch-action', 'none');
+        htmlGlobal.style.paddingLeft = '17px';
+        bodyGlobal.style.overflow = 'hidden';
+        bodyGlobal.style.touchAction = 'none';
 
         if (pageHeader.classList.contains('page-header--menu-opened')) {
           pageHeader.classList.remove('page-header--menu-opened');
@@ -56,9 +56,10 @@
         popup.classList.remove(visibleClass);
         popup.classList.add(hiddenClass);
         blackout.classList.add('blackout--none');
-        htmlGlobal.removeAttribute('padding-left');
-        bodyGlobal.removeAttribute('overflow');
-        bodyGlobal.removeAttribute('touch-action');
+
+        htmlGlobal.style.paddingLeft = '';
+        bodyGlobal.style.overflow = '';
+        bodyGlobal.style.touchAction = '';
       });
     }
   };
